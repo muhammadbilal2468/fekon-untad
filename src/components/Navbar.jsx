@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 z-50">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href=" " class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={untadImg} class="h-8" alt="Flowbite Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Akuntansi Sektor Publik
@@ -39,7 +39,7 @@ const Navbar = () => {
           <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a
-                href="#"
+                href=" "
                 class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
                 aria-current="page"
               >
@@ -79,7 +79,7 @@ const Navbar = () => {
                 >
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Profil S1 Akuntansi Sektor Publik
@@ -87,7 +87,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Visi Misi
@@ -95,7 +95,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Struktur Kepemimpinan
@@ -103,7 +103,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Dosen
@@ -111,7 +111,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Staff
@@ -153,7 +153,7 @@ const Navbar = () => {
                 >
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       RPS dan Buku Ajar
@@ -161,7 +161,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Panduan Akademik
@@ -169,7 +169,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Kalender Akademik
@@ -177,7 +177,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Jadwal Kuliah
@@ -219,7 +219,7 @@ const Navbar = () => {
                 >
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       LAYANAN MAHASISWA
@@ -227,7 +227,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       LAYANAN AKADEMIK
@@ -269,7 +269,7 @@ const Navbar = () => {
                 >
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Himpunan Mahasiswa
@@ -277,7 +277,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       SOP Administrasi Fakultas
@@ -285,7 +285,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Beasiswa
@@ -293,7 +293,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Kegiatan Mahasiswa
@@ -301,7 +301,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Unit Kegiatan Mahasiswa
@@ -309,7 +309,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Prestasi
@@ -351,7 +351,7 @@ const Navbar = () => {
                 >
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Laboratorium
@@ -359,7 +359,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Perpustakaan
@@ -367,7 +367,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href=" "
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Kelas
