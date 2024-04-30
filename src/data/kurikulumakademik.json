@@ -1,0 +1,501 @@
+[
+  {
+    "semester": 1,
+    "mata_kuliah": [
+      {
+        "kode_mk": "PA",
+        "mata_kuliah": "Pendidikan Agama",
+        "dosen_pengampu": {
+          "nama": "Dr. Haryono Pasang Kamase, SE., M.Sc., Ak",
+          "nidn_nidk": "0011057904"
+        },
+        "kelas": ["A", "B", "C", "D"]
+      },
+      {
+        "kode_mk": "PI",
+        "mata_kuliah": "Pancasila",
+        "dosen_pengampu": {
+          "nama": "Dr. Andi Chairil Furqan, SE., M.Sc., Ak",
+          "nidn_nidk": "0023038103"
+        },
+        "kelas": ["A", "B", "C"]
+      },
+      {
+        "kode_mk": "BI",
+        "mata_kuliah": "Bahasa Indonesia",
+        "dosen_pengampu": {
+          "nama": "Dr. Muhammad Ansar, SE., MSA",
+          "nidn_nidk": "0016117305"
+        },
+        "kelas": ["A", "B", "D"]
+      },
+      {
+        "kode_mk": "PK",
+        "mata_kuliah": "Pendidikan Kewarganegaraan",
+        "dosen_pengampu": {
+          "nama": "Dr. Maskuri Sutomo, SE, M.Si.",
+          "nidn_nidk": "0016027303"
+        },
+        "kelas": ["A", "B", "C"]
+      },
+      {
+        "kode_mk": "BAI",
+        "mata_kuliah": "Bahasa Inggris",
+        "dosen_pengampu": {
+          "nama": "Dr. Suparman, SE, M.Si.",
+          "nidn_nidk": "0001097204"
+        },
+        "kelas": ["B", "C", "D"]
+      },
+      {
+        "kode_mk": "PEM",
+        "mata_kuliah": "Pengantar Ekonomi Mikro",
+        "dosen_pengampu": {
+          "nama": "Masruddin, SE., MSA., Ak",
+          "nidn_nidk": "0011087505"
+        },
+        "kelas": ["A", "C", "D"]
+      },
+      {
+        "kode_mk": "PB",
+        "mata_kuliah": "Pengantar Bisnis",
+        "dosen_pengampu": {
+          "nama": "Dr. Jurana N.S, SE., MSA",
+          "nidn_nidk": "0013048204"
+        },
+        "kelas": ["A", "B", "D"]
+      },
+      {
+        "kode_mk": "PAK",
+        "mata_kuliah": "Pengantar Akuntansi",
+        "dosen_pengampu": {
+          "nama": "Dr. Abdul Kahar, S.E., M.Si., Ak.",
+          "nidn_nidk": "0008016804"
+        },
+        "kelas": ["B", "C", "D"]
+      }
+    ]
+  },
+  {
+    "semester": 2,
+    "mata_kuliah": [
+      {
+        "kode_mk": "PKAK",
+        "mata_kuliah": "Pendidikan Karakter dan Anti Korupsi",
+        "dosen_pengampu": {
+          "nama": "Dr. Fikry Karim, SE., M.Acc., Ak",
+          "nidn_nidk": "0006087107"
+        },
+        "kelas": ["A", "C", "D"]
+      },
+      {
+        "kode_mk": "K",
+        "mata_kuliah": "Kewirausahaan",
+        "dosen_pengampu": {
+          "nama": "Dr. Ni Made Suwitri Parwati, SE., M.Si., Ak",
+          "nidn_nidk": "0005048006"
+        },
+        "kelas": ["A", "B", "C"]
+      },
+      {
+        "kode_mk": "KLH",
+        "mata_kuliah": "Kalian Lingkungan Hidup",
+        "dosen_pengampu": {
+          "nama": "Dr. Andi Chairil Furqan, SE., M.Sc., Ak",
+          "nidn_nidk": "0023038103"
+        },
+        "kelas": ["A", "B"]
+      },
+      {
+        "kode_mk": "IKD",
+        "mata_kuliah": "Ilmu Kealamian Dasar",
+        "dosen_pengampu": {
+          "nama": "Dr. Abdul Pattawe, SE., M.Si., Ak",
+          "nidn_nidk": "0012035908"
+        },
+        "kelas": ["A", "C"]
+      },
+      {
+        "kode_mk": "PEM2",
+        "mata_kuliah": "Pengantar Ekonomi Makro",
+        "dosen_pengampu": {
+          "nama": "Dr. Chalarce Totanan, M.Si., Ak",
+          "nidn_nidk": "0023056604"
+        },
+        "kelas": ["B", "C", "D"]
+      },
+      {
+        "kode_mk": "PA2",
+        "mata_kuliah": "Pengantar Akuntansi 2",
+        "dosen_pengampu": {
+          "nama": "Dr. Syamsul Bachri, SE, M.Si.",
+          "nidn_nidk": "0011096204"
+        },
+        "kelas": ["A", "B", "D"]
+      },
+      {
+        "kode_mk": "PM",
+        "mata_kuliah": "Pengantar Manajemen",
+        "dosen_pengampu": {
+          "nama": "Dr. Abdul Kahar, S.E., M.Si., Ak.",
+          "nidn_nidk": "0008016804"
+        },
+        "kelas": ["B", "C"]
+      },
+      {
+        "kode_mk": "PLH",
+        "mata_kuliah": "Pengantar Ilmu Hukum",
+        "dosen_pengampu": {
+          "nama": "Dr. Muliati, SE., M.Si., Ak",
+          "nidn_nidk": "0012096903"
+        },
+        "kelas": ["A", "D"]
+      }
+    ]
+  },
+  {
+    "semester": 3,
+    "mata_kuliah": [
+      {
+        "kode_mk": "AB",
+        "mata_kuliah": "Akuntansi Biaya",
+        "dosen_pengampu": {
+          "nama": "Dr. Ira Nuriya Santi, SE, MM",
+          "nidn_nidk": "0017108002"
+        },
+        "kelas": ["A", "B", "C", "D"]
+      },
+      {
+        "kode_mk": "SE",
+        "mata_kuliah": "Statistik Ekonomi",
+        "dosen_pengampu": {
+          "nama": "Dr. Suparman, SE, M.Si.",
+          "nidn_nidk": "0001097204"
+        },
+        "kelas": ["A", "B", "C"]
+      },
+      {
+        "kode_mk": "AK",
+        "mata_kuliah": "Akuntansi Keuangan",
+        "dosen_pengampu": {
+          "nama": "Dr. Maskuri Sutomo, SE, M.Si.",
+          "nidn_nidk": "0016027303"
+        },
+        "kelas": ["B", "D"]
+      },
+      {
+        "kode_mk": "PRD",
+        "mata_kuliah": "Pajak dan Retribusi Daerah",
+        "dosen_pengampu": {
+          "nama": "Dr. Muhammad Din, SE., M.Si., Ak",
+          "nidn_nidk": "0006028302"
+        },
+        "kelas": ["A", "C"]
+      },
+      {
+        "kode_mk": "ME",
+        "mata_kuliah": "Matematika Ekonomi",
+        "dosen_pengampu": {
+          "nama": "Masruddin, SE., MSA., Ak",
+          "nidn_nidk": "0011087505"
+        },
+        "kelas": ["B", "D"]
+      },
+      {
+        "kode_mk": "SPI",
+        "mata_kuliah": "Sistem Pemerintahan Indonesia",
+        "dosen_pengampu": {
+          "nama": "Dr. M. Ikbal A, SE., M.Si., Ak",
+          "nidn_nidk": "0022046906"
+        },
+        "kelas": ["A", "C"]
+      },
+      {
+        "kode_mk": "AS",
+        "mata_kuliah": "Akuntansi Sektor Publik",
+        "dosen_pengampu": {
+          "nama": "Dr. Muhammad Ansar, SE., MSA",
+          "nidn_nidk": "0016117305"
+        },
+        "kelas": ["B", "D"]
+      },
+      {
+        "kode_mk": "PLP",
+        "mata_kuliah": "Pengantar Ilmu Pemerintahan",
+        "dosen_pengampu": {
+          "nama": "Dr. Fikry Karim, SE., M.Acc., Ak",
+          "nidn_nidk": "0006087107"
+        },
+        "kelas": ["A", "C"]
+      }
+    ]
+  },
+  {
+    "semester": 4,
+    "mata_kuliah": [
+      {
+        "kode_mk": "AKI",
+        "mata_kuliah": "Akuntansi Keuangan II",
+        "dosen_pengampu": {
+          "nama": "Dr. Abdul Kahar, S.E., M.Si., Ak.",
+          "nidn_nidk": "0008016804"
+        },
+        "kelas": ["A", "B", "C", "D"]
+      },
+      {
+        "kode_mk": "AKP",
+        "mata_kuliah": "Akuntansi Pemerintahan",
+        "dosen_pengampu": {
+          "nama": "Dr. Muhtar Lutfi, SE, M.Si.",
+          "nidn_nidk": "0002026804"
+        },
+        "kelas": ["A", "C", "D"]
+      },
+      {
+        "kode_mk": "AKD",
+        "mata_kuliah": "Akuntansi Keuangan Daerah",
+        "dosen_pengampu": {
+          "nama": "Dr. Chalarce Totanan, M.Si., Ak",
+          "nidn_nidk": "0023056604"
+        },
+        "kelas": ["A", "B", "C"]
+      },
+      {
+        "kode_mk": "MRSSP",
+        "mata_kuliah": "Manajemen Risiko Sektor Sektor Publik",
+        "dosen_pengampu": {
+          "nama": "Dr. M. Ikbal A, SE., M.Si., Ak",
+          "nidn_nidk": "0022046906"
+        },
+        "kelas": ["A", "B", "D"]
+      },
+      {
+        "kode_mk": "PSIP",
+        "mata_kuliah": "Pub Sistem Informasi Pemerintahan",
+        "dosen_pengampu": {
+          "nama": "Dr. Haryono Pasang Kamase, SE., M.Sc., Ak",
+          "nidn_nidk": "0011057904"
+        },
+        "kelas": ["B", "C", "D"]
+      },
+      {
+        "kode_mk": "AM",
+        "mata_kuliah": "Akuntansi Manajemen",
+        "dosen_pengampu": {
+          "nama": "Dr. Muliati, SE., M.Si., Ak",
+          "nidn_nidk": "0012096903"
+        },
+        "kelas": ["A", "C"]
+      },
+      {
+        "kode_mk": "HKD",
+        "mata_kuliah": "Hukum Keuangan Daerah",
+        "dosen_pengampu": {
+          "nama": "Dr. Muhammad Din, SE., M.Si., Ak",
+          "nidn_nidk": "0006028302"
+        },
+        "kelas": ["B", "D"]
+      },
+      {
+        "kode_mk": "AKBN",
+        "mata_kuliah": "Akuntansi Kebencanaan",
+        "dosen_pengampu": {
+          "nama": "Dr. Maskuri Sutomo, SE, M.Si.",
+          "nidn_nidk": "0016027303"
+        },
+        "kelas": ["A", "C"]
+      }
+    ]
+  },
+  {
+    "semester": 5,
+    "mata_kuliah": [
+      {
+        "kode_mk": "AF",
+        "mata_kuliah": "Akuntansi Forensik",
+        "dosen_pengampu": {
+          "nama": "Dr. Muhammad Ansar, SE., MSA",
+          "nidn_nidk": "0016117305"
+        },
+        "kelas": ["A", "B", "C", "D"]
+      },
+      {
+        "kode_mk": "MPA",
+        "mata_kuliah": "Metodologi Penelitian Akuntansi",
+        "dosen_pengampu": {
+          "nama": "Dr. Abdul Kahar, S.E., M.Si., Ak.",
+          "nidn_nidk": "0008016804"
+        },
+        "kelas": ["A", "B", "C"]
+      },
+      {
+        "kode_mk": "MA",
+        "mata_kuliah": "Manajemen Asset Pemerintahan",
+        "dosen_pengampu": {
+          "nama": "Dr. Ira Nuriya Santi, SE, MM",
+          "nidn_nidk": "0017108002"
+        },
+        "kelas": ["B", "D"]
+      },
+      {
+        "kode_mk": "AKKU",
+        "mata_kuliah": "Akuntansi Koperasi dan UKM",
+        "dosen_pengampu": {
+          "nama": "Dr. Suparman, SE, M.Si.",
+          "nidn_nidk": "0001097204"
+        },
+        "kelas": ["A", "C"]
+      },
+      {
+        "kode_mk": "PKKN",
+        "mata_kuliah": "Pemeriksaan Keuangan Negara",
+        "dosen_pengampu": {
+          "nama": "Dr. Muhtar Lutfi, SE, M.Si.",
+          "nidn_nidk": "0002026804"
+        },
+        "kelas": ["B", "D"]
+      },
+      {
+        "kode_mk": "PP",
+        "mata_kuliah": "Pengawasan Pemerintahan",
+        "dosen_pengampu": {
+          "nama": "Dr. Muliati, SE., M.Si., Ak",
+          "nidn_nidk": "0012096903"
+        },
+        "kelas": ["A", "C"]
+      },
+      {
+        "kode_mk": "PSP",
+        "mata_kuliah": "Perencanaan Strategis Pemerintahan",
+        "dosen_pengampu": {
+          "nama": "Dr. Haryono Pasang Kamase, SE., M.Sc., Ak",
+          "nidn_nidk": "0011057904"
+        },
+        "kelas": ["B", "D"]
+      },
+      {
+        "kode_mk": "ABUMP",
+        "mata_kuliah": "Akuntansi Badan Usaha Milik Pemerintahan",
+        "dosen_pengampu": {
+          "nama": "Dr. Syamsul Bachri, SE, M.Si.",
+          "nidn_nidk": "0011096204"
+        },
+        "kelas": ["A", "C"]
+      }
+    ]
+  },
+  {
+    "semester": 6,
+    "mata_kuliah": [
+      {
+        "kode_mk": "AD",
+        "mata_kuliah": "Akuntansi Desa",
+        "dosen_pengampu": {
+          "nama": "Dr. Fikry Karim, SE., M.Acc., Ak",
+          "nidn_nidk": "0006087107"
+        },
+        "kelas": ["A", "B", "C", "D"]
+      },
+      {
+        "kode_mk": "MKP",
+        "mata_kuliah": "Manajemen Keuangan Pemerintahan",
+        "dosen_pengampu": {
+          "nama": "Dr. Muhtar Lutfi, SE, M.Si.",
+          "nidn_nidk": "0002026804"
+        },
+        "kelas": ["A", "B", "C"]
+      },
+      {
+        "kode_mk": "KA",
+        "mata_kuliah": "Komputer Akuntansi",
+        "dosen_pengampu": {
+          "nama": "Dr. Chalarce Totanan, M.Si., Ak",
+          "nidn_nidk": "0023056604"
+        },
+        "kelas": ["A", "C"]
+      },
+      {
+        "kode_mk": "PS",
+        "mata_kuliah": "Pengantar Sosiologi",
+        "dosen_pengampu": {
+          "nama": "Dr. Abdul Pattawe, SE., M.Si., Ak",
+          "nidn_nidk": "0012035908"
+        },
+        "kelas": ["B", "D"]
+      },
+      {
+        "kode_mk": "BLU",
+        "mata_kuliah": "Akuntansi BLU",
+        "dosen_pengampu": {
+          "nama": "Dr. Rita Yunus, SE, M.Si.",
+          "nidn_nidk": "0011077609"
+        },
+        "kelas": ["A", "B"]
+      },
+      {
+        "kode_mk": "PP2",
+        "mata_kuliah": "Pelayanan Publik",
+        "dosen_pengampu": {
+          "nama": "Dr. Muliati, SE., M.Si., Ak",
+          "nidn_nidk": "0012096903"
+        },
+        "kelas": ["C", "D"]
+      },
+      {
+        "kode_mk": "EP",
+        "mata_kuliah": "Ekonomi Publik",
+        "dosen_pengampu": {
+          "nama": "Dr. Haryono Pasang Kamase, SE., M.Sc., Ak",
+          "nidn_nidk": "0011057904"
+        },
+        "kelas": ["A", "D"]
+      },
+      {
+        "kode_mk": "EP",
+        "mata_kuliah": "Etika Pemerintahan",
+        "dosen_pengampu": {
+          "nama": "Dr. Maskuri Sutomo, SE, M.Si.",
+          "nidn_nidk": "0016027303"
+        },
+        "kelas": ["B", "C"]
+      },
+      {
+        "kode_mk": "AK",
+        "mata_kuliah": "Administrasi Kepegawaian",
+        "dosen_pengampu": {
+          "nama": "Dr. Jamaluddin, S.E., M.Si., AK",
+          "nidn_nidk": "0005057006"
+        },
+        "kelas": ["A"]
+      }
+    ]
+  },
+  {
+    "semester": 7,
+    "mata_kuliah": [
+      {
+        "kode_mk": "PKL",
+        "mata_kuliah": "Praktek Kerja Lapangan (PKL)",
+        "dosen_pengampu": {
+          "nama": "Prof. Dr. Ridwan, SE., M.Si., Ak",
+          "nidn_nidk": "0005045705"
+        },
+        "kelas": ["A", "B", "C", "D"]
+      }
+    ]
+  },
+  {
+    "semester": 8,
+    "mata_kuliah": [
+      {
+        "kode_mk": "SK",
+        "mata_kuliah": "Skripsi/Laporan Akhir",
+        "dosen_pengampu": {
+          "nama": "Prof. Dr. Andi Mattulada, SE., M.Si., Ak",
+          "nidn_nidk": "0028046207"
+        },
+        "kelas": ["A", "B", "C", "D"]
+      }
+    ]
+  }
+]

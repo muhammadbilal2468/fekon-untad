@@ -1,6 +1,17 @@
 export { default as untadImg } from "./untad.png";
+export { default as untad2Img } from "./untad2.jpg";
 export { default as bannerImg } from "./banner.png";
+export { default as banner2Img } from "./banner2.png";
 export { default as sertifikatImg } from "./sertifikat.jpeg";
 export { default as pimpinanImg } from "./pimpinan.jpg";
 export { default as kampusmerdekaImg } from "./kampusmerdeka.jpg";
 export { default as nokasiImg } from "./nokasi.jpg";
+export { default as visiImg } from "./visi.png";
+export { default as misiImg } from "./misi.png";
+export { default as perpustakaanImg } from "./perpustakaan.jpg";
+export { default as silaImg } from "./sila.jpg";
+export { default as sistaImg } from "./sista.jpg";
+export { default as pmbutImg } from "./pmbut.jpg";
+export { default as transkripImg } from "./transkrip.jpg";
+export { default as fadhilImg } from "./fadhil.png";
+export { default as bilalImg } from "./bilal.jpg";

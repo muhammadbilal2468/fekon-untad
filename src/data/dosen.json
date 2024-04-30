@@ -1,0 +1,342 @@
+[
+  {
+    "NO": 1,
+    "NAMA_DOSEN": "Prof. Dr. Andi Mattulada, SE., M.Si., Ak",
+    "STATUS": "TETAP",
+    "NIDN/NIDK": "0028046207",
+    "JABATAN_AKADEMIK": "Guru Besar",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Ilmu Ekonomi Akuntansi Universitas Padjadjaran (1993)",
+      "Doktor Ilmu Ekonomi Akuntansi Universitas Padjadjaran (2001)"
+    ]
+  },
+  {
+    "NO": 2,
+    "NAMA_DOSEN": "Prof. Dr. Ridwan, SE., M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0005045705",
+    "JABATAN_AKADEMIK": "Guru Besar",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Ilmu Akuntansi Universitas Padjadjaran Bandung (1998)",
+      "Doktor Ilmu Akuntansi Universitas Padjadjaran (2007)"
+    ]
+  },
+  {
+    "NO": 3,
+    "NAMA_DOSEN": "Prof. Dr. Abdul Pattawe, SE., M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0012035908",
+    "JABATAN_AKADEMIK": "Guru Besar",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Ilmu Manajemen Keuangan. Universitas Hasanuddin (2000)",
+      "Doktor Ilmu Ekonomi Universitas Tadulako (2017)"
+    ]
+  },
+  {
+    "NO": 4,
+    "NAMA_DOSEN": "Prof. Dr. Syamsul Bachri, SE, M.Si.",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0011096204",
+    "JABATAN_AKADEMIK": "Guru Besar",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Manajemen Pemasaran Universitas Hasanuddin (1996)",
+      "Doktor Ilmu Ekonomi Universitas Hasanuddin (2006)"
+    ]
+  },
+  {
+    "NO": 5,
+    "NAMA_DOSEN": "Dr. Dra. Chalarce Totanan, M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0023056604",
+    "JABATAN_AKADEMIK": "Lektor Kepala",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Ilmu Ekonomi Universitas (2004)",
+      "Doktor Ilmu Akuntansi Universitas Brawijaya (2014)"
+    ]
+  },
+  {
+    "NO": 6,
+    "NAMA_DOSEN": "Dr. Muliati, SE., M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0012096903",
+    "JABATAN_AKADEMIK": "Lektor Kepala",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Ilmu Manajemen Keuangan Universitas Hasanuddin (2004)",
+      "Doktor Ilmu Ekonomi Universitas Hasanuddin (2014)"
+    ]
+  },
+  {
+    "NO": 7,
+    "NAMA_DOSEN": "Dr. M. Ikbal A, SE., M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0022046906",
+    "JABATAN_AKADEMIK": "Lektor Kepala",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Ilmu Ekonomi Akuntansi Universitas Padjadjaran (2006)",
+      "Doktor Ilmu Akuntansi Universitas Brawijaya (2013)"
+    ]
+  },
+  {
+    "NO": 8,
+    "NAMA_DOSEN": "Yuldi Mile, SE., M.Si",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0014116503",
+    "JABATAN_AKADEMIK": "Lektor Kepala",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Pengelolaan Sumberdaya Pembangunan Universitas Sam Ratulangi (2006)"
+    ]
+  },
+  {
+    "NO": 9,
+    "NAMA_DOSEN": "Dr. Muhammad Din, SE., M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0006028302",
+    "JABATAN_AKADEMIK": "Lektor Kepala",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Universitas Diponegoro (2008)",
+      "Doktor Ilmu Ekonomi Universitas Diponegoro (2019)"
+    ]
+  },
+  {
+    "NO": 10,
+    "NAMA_DOSEN": "Dr. Ni Made Suwitri Parwati, SE., M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0005048006",
+    "JABATAN_AKADEMIK": "Lektor Kepala",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Universitas Gadjah Mada (2004)",
+      "Doktor Ilmu Ekonomi Universitas Tadulako (2021)"
+    ]
+  },
+  {
+    "NO": 11,
+    "NAMA_DOSEN": "Dr. Jamaluddin, S.E., M.Si., AK",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0005057006",
+    "JABATAN_AKADEMIK": "Lektor Kepala",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Akuntansi Universitas Hasanuddin (2004)",
+      "Doktor Ilmu Ekonomi Universitas Hasanuddin (2015)"
+    ]
+  },
+  {
+    "NO": 12,
+    "NAMA_DOSEN": "Dr. Abdul Kahar, S.E., M.Si., Ak.",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0008016804",
+    "JABATAN_AKADEMIK": "Lektor Kepala",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Ilmu Ekonomi Universitas Padjadjaran (2004)",
+      "Doktor Ilmu Akuntansi Universitas Brawijaya (2014)"
+    ]
+  },
+  {
+    "NO": 13,
+    "NAMA_DOSEN": "Dr. Muhtar Lutfi, SE, M.Si.",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0002026804",
+    "JABATAN_AKADEMIK": "Lektor Kepala",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Ilmu Ekonomi dan Akuntansi Universitas Padjadjaran (1968)",
+      "Doktor Administrasi Publik Universitas Negeri Makasssar (2014)"
+    ]
+  },
+  {
+    "NO": 14,
+    "NAMA_DOSEN": "Dr. Fikry Karim, SE., M.Acc., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0006087107",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Master of Accounting Melbourne University (2003)",
+      "Doktor Ilmu Ekonomi Universitas Diponegoro (2020)"
+    ]
+  },
+  {
+    "NO": 15,
+    "NAMA_DOSEN": "Dr. Nina Yusnita Yamin, SE., M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0005117009",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Akuntansi Universitas Padjadjaran (2007)",
+      "Doktor Ilmu Akuntansi Universitas Brawijaya (2015)"
+    ]
+  },
+  {
+    "NO": 16,
+    "NAMA_DOSEN": "Rahma Masdar, SE., M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0003117106",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": ["Magister Sains Ilmu Ekonomi (2007)"]
+  },
+  {
+    "NO": 17,
+    "NAMA_DOSEN": "Dr. Selmita Paranoan, SE., M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0007098201",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Akuntansi Universitas Brawijaya (2011)",
+      "Doktor Ilmu Akuntansi Universitas Brawijaya (2023)"
+    ]
+  },
+  {
+    "NO": 18,
+    "NAMA_DOSEN": "Dr. E. Femilia Zahra, SE., M.Sc",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0021068104",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Akuntansi Universitas Gadjah Mada (2009)",
+      "Doktor Ilmu Ekonomi Universitas Diponegoro (2018)"
+    ]
+  },
+  {
+    "NO": 19,
+    "NAMA_DOSEN": "Muhamad Iqbal, SE., M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0030107106",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": ["Magister Ekonomi Akuntansi (2010)"]
+  },
+  {
+    "NO": 20,
+    "NAMA_DOSEN": "Dr. Andi Chairil Furqan, SE., M.Sc., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0023038103",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Akuntansi Universitas Gadjah Mada (2009)",
+      "Doktor Ilmu Akuntansi Universitas Indonesia (2020)"
+    ]
+  },
+  {
+    "NO": 21,
+    "NAMA_DOSEN": "Dr. Muhammad Ansar, SE., MSA",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0016117305",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Akuntansi Universitas Brawijaya (2009)",
+      "Doktor Ilmu Akuntansi Universitas Brawijaya (2022)"
+    ]
+  },
+  {
+    "NO": 22,
+    "NAMA_DOSEN": "Dr. Haryono Pasang Kamase, SE., M.Sc., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0011057904",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Ekonomi Akuntansi Universitas Gadjah Mada (2011)",
+      "Doktor Ilmu Akuntansi Universitas Gadjah Mada (2022)"
+    ]
+  },
+  {
+    "NO": 23,
+    "NAMA_DOSEN": "Dr. Sugianto, SE., M.Si., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0006117306",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Akuntansi Universitas Hasanuddin (2011)",
+      "Doktor Ilmu Akuntansi Universitas Brawijaya (2022)"
+    ]
+  },
+  {
+    "NO": 24,
+    "NAMA_DOSEN": "Dr. Maskuri Sutomo, SE, M.Si.",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0016027303",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Ilmu Ekonomi Universitas Padjadjaran (2008)",
+      "Doktor Ilmu Ekonomi Universitas Padjadjaran (2008)"
+    ]
+  },
+  {
+    "NO": 25,
+    "NAMA_DOSEN": "Dr. Ira Nuriya Santi, SE, MM",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0017108002",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Manajemen Universitas Brawijaya (2008)",
+      "Doktor Ilmu Manajemen Universitas Brawijaya (2016)"
+    ]
+  },
+  {
+    "NO": 26,
+    "NAMA_DOSEN": "Dr. Suparman, SE, M.Si.",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0001097204",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Ilmu Ekonomi dan Studi Pembangunan Universitas Gadjah Mada (2005)",
+      "Doktor Ilmu Ekonomi Universitas Gadjah Mada (2012)"
+    ]
+  },
+  {
+    "NO": 27,
+    "NAMA_DOSEN": "Dr. Rita Yunus, SE, M.Si.",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0011077609",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Ilmu Ekonomi dan Studi Pembangunan Universitas Dipenogoro (2009)",
+      "Doktor Ilmu Ekonomi Universitas Hasanuddin (2022)"
+    ]
+  },
+  {
+    "NO": 28,
+    "NAMA_DOSEN": "Masruddin, SE., MSA., Ak",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0011087505",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Akuntansi Universitas Brawijaya (2011)"
+    ]
+  },
+  {
+    "NO": 29,
+    "NAMA_DOSEN": "Dr. Jurana N.S, SE., MSA",
+    "STATUS": "Tetap",
+    "NIDN/NIDK": "0013048204",
+    "JABATAN_AKADEMIK": "Lektor",
+    "AKADEMISI_PRAKTISI": "Akademisi",
+    "PENDIDIKAN_PASCA_SARJANA": [
+      "Magister Sains Akuntansi Universitas Brawijaya (2011)",
+      "Doktor Ilmu Akuntansi Universitas Brawijaya (2019)"
+    ]
+  }
+]
