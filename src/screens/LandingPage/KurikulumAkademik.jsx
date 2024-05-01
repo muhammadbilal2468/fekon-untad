@@ -24,7 +24,14 @@ const KurikulumAkademik = () => {
         class="relative flex flex-col w-2/3 mx-auto"
         data-carousel="static"
       >
-        <div class="relative h-96 overflow-x-hidden rounded-lg">
+        <div
+          class="relative h-96 overflow-x-hidden rounded-lg"
+          style={{
+            overflowY: "scroll",
+            msOverflowStyle: "none",
+            scrollbarWidth: "none",
+          }}
+        >
           {/* table */}
           {kurikulumAkademik.map((semester, index) => {
             const matkul = semester.mata_kuliah;
