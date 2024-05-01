@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { untadImg } from "../../assets";
+import kurikulumAkademik from "../../data/kurikulumakademik.json";
 
 const KurikulumAkademik = () => {
+  const [matkul, setMatkul] = useState([]);
+
+  useEffect(() => {
+    if (kurikulumAkademik.length > 0) {
+      const mataKuliahSemesterPertama = kurikulumAkademik[0].mata_kuliah;
+      setMatkul(mataKuliahSemesterPertama);
+    }
+  }, []);
+
+  console.log("matkul", matkul);
   return (
     <div className="max-w-screen-xl mx-auto p-4 mb-96">
       <h2 className="text-4xl font-bold text-center my-10">
@@ -15,59 +26,81 @@ const KurikulumAkademik = () => {
       >
         <div class="relative h-96 overflow-x-hidden rounded-lg">
           {/* table */}
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <h2 className="text-2xl text-center my-5 font-bold">Semester 1</h2>
-            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-              <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                  <tr>
-                    <th scope="col" class="px-6 py-3">
-                      Dosen Penanggung Jawab
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                      Kode
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                      Matakuliah
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                      Kelas
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th
-                      scope="row"
-                      class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                    >
-                      <img
-                        class="w-10 h-10 rounded-full"
-                        src={untadImg}
-                        alt="dosen"
-                      />
-                      <div class="ps-3">
-                        <div class="text-base font-semibold">Tes</div>
-                        <div class="font-normal text-gray-500">
-                          tes@gmail.com
-                        </div>
-                      </div>
-                    </th>
-                    <td class="px-6 py-4">10290192</td>
-                    <td class="px-6 py-4">
-                      <div class="flex items-center">
-                        <div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>
-                        matakuliah
-                      </div>
-                    </td>
-                    <td class="px-6 py-4">
-                      <p class="font-medium">A, B, C</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          {kurikulumAkademik.map((semester, index) => {
+            const matkul = semester.mata_kuliah;
+            return (
+              <div
+                class="hidden duration-700 ease-in-out"
+                key={index}
+                data-carousel-item
+              >
+                <h2 className="text-2xl text-center my-5 font-bold">
+                  Semester {index + 1}
+                </h2>
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                      <tr>
+                        <th scope="col" class="px-6 py-3">
+                          Dosen Penanggung Jawab
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                          Kode
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                          Matakuliah
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                          Kelas
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {matkul.map((item, index) => {
+                        return (
+                          <tr
+                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                            key={index}
+                          >
+                            <th
+                              scope="row"
+                              class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
+                            >
+                              <img
+                                class="w-10 h-10 rounded-full"
+                                src={untadImg}
+                                alt="dosen"
+                              />
+                              <div class="ps-3">
+                                <div class="text-base font-semibold">
+                                  {item.dosen_pengampu.nama}
+                                </div>
+                                <div class="font-normal text-gray-500">
+                                  tes@gmail.com
+                                </div>
+                              </div>
+                            </th>
+                            <td class="px-6 py-4">
+                              {item.dosen_pengampu.nidn_nidk}
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="flex items-center">
+                                <div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>
+                                {item.mata_kuliah}
+                              </div>
+                            </td>
+                            <td class="px-6 py-4">
+                              <p class="font-medium">{item.kelas.join(", ")}</p>
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         <button
