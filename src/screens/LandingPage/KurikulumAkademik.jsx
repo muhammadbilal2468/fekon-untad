@@ -76,13 +76,11 @@ const KurikulumAkademik = () => {
                                   {item.dosen_pengampu.nama}
                                 </div>
                                 <div class="font-normal text-gray-500">
-                                  tes@gmail.com
+                                  {item.dosen_pengampu.nidn_nidk}
                                 </div>
                               </div>
                             </th>
-                            <td class="px-6 py-4">
-                              {item.dosen_pengampu.nidn_nidk}
-                            </td>
+                            <td class="px-6 py-4">{item.kode_mk}</td>
                             <td class="px-6 py-4">
                               <div class="flex items-center">
                                 <div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>
