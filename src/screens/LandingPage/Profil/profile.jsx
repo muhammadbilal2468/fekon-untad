@@ -1,7 +1,17 @@
-import React from "react";
-import { banner2Img, untad2Img, untadImg } from "../../assets";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
+import {
+  banner2Img,
+  sertifikatImg,
+  untad2Img,
+  untadImg,
+} from "../../../assets";
 
 const Profil = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <div className="max-w-screen-xl mx-auto p-4">
@@ -130,6 +140,14 @@ const Profil = () => {
           ASP Sarjana Terapan telah beroperasi hingga saat ini sebagai bagian
           dari PS di Jurusan Akuntansi FEB UNTAD.
         </p>
+        {/* --------------------------------------- */}
+        <h2 className="text-4xl font-bold text-center mb-10">AKREDITAS</h2>
+        <div
+          data-aos="zoom-in"
+          className="flex justify-center items-center mb-10"
+        >
+          <img src={sertifikatImg} alt="" />
+        </div>
       </div>
     </>
   );

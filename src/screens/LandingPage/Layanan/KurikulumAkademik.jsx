@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { untadImg } from "../../assets";
-import kurikulumAkademik from "../../data/kurikulumakademik.json";
+import { untadImg } from "../../../assets";
+import kurikulumAkademik from "../../../data/kurikulumakademik.json";
 
 const KurikulumAkademik = () => {
   const [matkul, setMatkul] = useState([]);

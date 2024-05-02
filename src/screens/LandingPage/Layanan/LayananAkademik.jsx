@@ -1,5 +1,5 @@
 import React from "react";
-import { pmbutImg, transkripImg } from "../../assets";
+import { pmbutImg, transkripImg } from "../../../assets";
 
 const LayananAkademik = () => {
   return (

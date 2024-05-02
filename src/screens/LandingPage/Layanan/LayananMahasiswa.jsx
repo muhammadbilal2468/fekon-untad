@@ -1,5 +1,5 @@
 import React from "react";
-import { perpustakaanImg, silaImg, sistaImg } from "../../assets";
+import { perpustakaanImg, silaImg, sistaImg } from "../../../assets";
 
 const LayananMahasiswa = () => {
   return (

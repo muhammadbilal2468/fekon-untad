@@ -9,31 +9,37 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
               <img src={untadImg} className="h-8 me-3" alt="FlowBite Logo" />
-              <span className="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="text-white self-center xl:text-2xl text-base font-semibold whitespace-nowrap dark:text-white">
                 Akuntansi Sektor Publik
               </span>
             </a>
-            <a href=" ">
-              <img
-                src={kampusmerdekaImg}
-                className="h-30 w-40"
-                alt="FlowBite Logo"
-              />
-            </a>
-            <a href=" ">
-              <img src={nokasiImg} className="h-24 w-40" alt="FlowBite Logo" />
-            </a>
+            <div className="flex xl:flex-col xl:items-start items-center">
+              <a href=" ">
+                <img
+                  src={kampusmerdekaImg}
+                  className="h-30 w-40"
+                  alt="FlowBite Logo"
+                />
+              </a>
+              <a href=" ">
+                <img
+                  src={nokasiImg}
+                  className="h-24 w-40"
+                  alt="FlowBite Logo"
+                />
+              </a>
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-white">
+              <h2 className="mb-6 xl:text-base text-sm font-semibold uppercase text-white">
                 Resources
               </h2>
               <ul className="text-white font-medium">
                 <li className="mb-4">
                   <a
                     href="https://flowbite.com/"
-                    className="hover:underline text-slate-200"
+                    className="hover:underline text-slate-200 xl:text-base text-xs"
                   >
                     Flowbite
                   </a>
@@ -41,7 +47,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="https://tailwindcss.com/"
-                    className="hover:underline text-slate-200"
+                    className="hover:underline text-slate-200 xl:text-base text-xs"
                   >
                     Tailwind CSS
                   </a>
@@ -49,14 +55,14 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-white">
+              <h2 className="mb-6 xl:text-base text-sm font-semibold uppercase text-white">
                 Follow us
               </h2>
               <ul className="text-white font-medium">
                 <li className="mb-4">
                   <a
                     href="https://github.com/themesberg/flowbite"
-                    className="hover:underline text-slate-200 "
+                    className="hover:underline text-slate-200 xl:text-base text-xs"
                   >
                     Github
                   </a>
@@ -64,7 +70,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline text-slate-200"
+                    className="hover:underline text-slate-200 xl:text-base text-xs"
                   >
                     Discord
                   </a>
@@ -72,19 +78,22 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-white">
+              <h2 className="mb-6 xl:text-base text-sm font-semibold uppercase text-white">
                 Legal
               </h2>
               <ul className="text-white font-medium">
                 <li className="mb-4">
-                  <a href=" " className="hover:underline text-slate-200">
+                  <a
+                    href=" "
+                    className="hover:underline text-slate-200 xl:text-base text-xs"
+                  >
                     Privacy Policy
                   </a>
                 </li>
                 <li>
                   <a
                     href="tim-aplikasi"
-                    className="hover:underline text-slate-200"
+                    className="hover:underline text-slate-200 xl:text-base text-xs"
                   >
                     Tim Aplikasi
                   </a>
@@ -95,11 +104,11 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-white sm:text-center">
+          <span className="xl:text-sm text-xs text-white sm:text-center">
             © 2024{" "}
             <a
               href="https://flowbite.com/"
-              className="hover:underline text-slate-200"
+              className="hover:underline text-slate-200 xl:text-base text-xs"
             >
               Akuntansi Sektor Publik
             </a>

@@ -1,5 +1,5 @@
 import React from "react";
-import { misiImg, visiImg } from "../../assets";
+import { misiImg, visiImg } from "../../../assets";
 
 const VisiMisi = () => {
   return (

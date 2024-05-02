@@ -4,9 +4,6 @@ import { untadImg } from "../assets";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHome, setIsHome] = useState(false);
-  // const [classBgNav, setClassBgNav] = useState("");
-  // const [classTittleNav, setClassTittleNav] = useState("");
-  // const [classMenuNav, setClassMenuNav] = useState("");
 
   const currentUrl = window.location.href;
   console.log(currentUrl);
@@ -20,7 +17,7 @@ const Navbar = () => {
       }
     };
 
-    const currentUrl = window.location.href; // Ambil URL saat ini di dalam useEffect
+    const currentUrl = window.location.href;
 
     if (currentUrl === "https://fekon-untad.vercel.app/") {
       setIsHome(true);
@@ -32,30 +29,17 @@ const Navbar = () => {
     };
   }, []);
 
-  // const checkIsHome = () => {
-  //   if (isScrolled && isHome) {
-  //     setClassBgNav("bg-white");
-  //   } else if (isScrolled && isHome) {
-  //     setClassBgNav("bg-white");
-  //   }
-  // };
-
-  console.log("isHome :", isHome);
-  // console.log("classBgNav :", classBgNav);
-  // console.log("classTittleNav :", classTittleNav);
-  // console.log("classMenuNav :", classMenuNav);
-
   return (
     <nav
       className={`sticky top-0 z-50 text-white ${
         !isScrolled && isHome ? "bg-none" : "bg-white shadow-md "
       }`}
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto xl:p-4 p-2">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={untadImg} className="h-8" alt="Flowbite Logo" />
           <span
-            className={`self-center text-2xl font-semibold whitespace-nowrap ${
+            className={`self-center xl:text-2xl text-lg font-semibold whitespace-nowrap ${
               isScrolled && isHome && "text-black"
             } ${!isHome && "text-black"}`}
           >
@@ -104,14 +88,24 @@ const Navbar = () => {
               </a>
             </li>
             <li>
+              <a
+                href="/"
+                className={`block py-2 px-3 rounded md:p-0 ${
+                  !isScrolled && isHome ? "text-white" : "text-black"
+                }`}
+              >
+                Berita
+              </a>
+            </li>
+            <li>
               <button
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbarAbout"
+                id="dropdownProfilLink"
+                data-dropdown-toggle="dropdownNavbarProfil"
                 className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
                   !isScrolled && isHome ? "text-white" : "text-black"
                 }`}
               >
-                Tentang
+                Profil
                 <svg
                   className="w-2.5 h-2.5 ms-2.5"
                   aria-hidden="true"
@@ -129,21 +123,13 @@ const Navbar = () => {
                 </svg>
               </button>
               <div
-                id="dropdownNavbarAbout"
-                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                id="dropdownNavbarProfil"
+                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
               >
                 <ul
                   className="py-2 text-sm text-gray-700 dark:text-gray-200"
                   aria-labelledby="dropdownLargeButton"
                 >
-                  <li>
-                    <a
-                      href="profil"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Profil Akuntansi Sektor Publik
-                    </a>
-                  </li>
                   <li>
                     <a
                       href="visimisi"
@@ -153,35 +139,109 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Struktur Kepemimpinan
+                    <a
+                      href="sejarah"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Sejarah
                     </a>
                   </li>
                   <li>
                     <a
-                      href="dosen"
+                      href="organisasi"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      Dosen
+                      Organisasi
                     </a>
                   </li>
                   <li>
-                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Staff
+                    <a
+                      href="kurikulum"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Kurikulum
                     </a>
+                  </li>
+                  <li>
+                    <a
+                      href="prestasi"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Prestasi
+                    </a>
+                  </li>
+                  <li aria-labelledby="dropdownProfilLink">
+                    <button
+                      id="dropdownPersonil"
+                      data-dropdown-toggle="doubleDropdownPersonil"
+                      data-dropdown-placement="right-start"
+                      type="button"
+                      class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 "
+                    >
+                      Personil
+                      <svg
+                        class="w-2.5 h-2.5 ms-2.5"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 1 4 4 4-4"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      id="doubleDropdownPersonil"
+                      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                    >
+                      <ul
+                        class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                        aria-labelledby="dropdownPersonil"
+                      >
+                        <li>
+                          <a
+                            href="pimpinan"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            Pimpinan
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="dosen"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            Dosen
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="staff"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            Staff
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
               </div>
             </li>
             <li>
               <button
-                id="dropdownNavbarLinkAcademic"
-                data-dropdown-toggle="dropdownNavbarAcademic"
+                id="dropdownNavbarLinkKinerja"
+                data-dropdown-toggle="dropdownNavbarKinerja"
                 className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
                   !isScrolled && isHome ? "text-white" : "text-black"
                 }`}
               >
-                Akademik
+                kinerja SP ASP
                 <svg
                   className="w-2.5 h-2.5 ms-2.5"
                   aria-hidden="true"
@@ -199,21 +259,21 @@ const Navbar = () => {
                 </svg>
               </button>
               <div
-                id="dropdownNavbarAcademic"
-                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                id="dropdownNavbarKinerja"
+                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 w-44 rounded-lg shadow"
               >
                 <ul
                   className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                  aria-labelledby="dropdownLargeButtonAcademic"
+                  aria-labelledby="dropdownLargeButtonKinerja"
                 >
                   <li>
                     <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      RPS dan Buku Ajar
+                      Visi, Misi, Tujuan dan Strategi
                     </a>
                   </li>
                   <li>
                     <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Panduan Akademik
+                      Tata Pamong, Tata Kelola dan Kerja Sama
                     </a>
                   </li>
                   <li>
@@ -221,12 +281,40 @@ const Navbar = () => {
                       href="kurikulum-akademik"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      Kurikulum Akademik
+                      Kemahasiswaan
                     </a>
                   </li>
                   <li>
                     <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Jadwal Kuliah
+                      Sumber Daya Manusia
+                    </a>
+                  </li>
+                  <li>
+                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
+                      Keuangan, Sarana, dan Prasarana
+                    </a>
+                  </li>
+                  <li>
+                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
+                      Pendidikan
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="kurikulum-akademik"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Penelitian
+                    </a>
+                  </li>
+                  <li>
+                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
+                      Pengabdian Kepada Masyarakat
+                    </a>
+                  </li>
+                  <li>
+                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
+                      Luaran dan Capaian Tridharma
                     </a>
                   </li>
                 </ul>
@@ -234,13 +322,13 @@ const Navbar = () => {
             </li>
             <li>
               <button
-                id="dropdownNavbarLinkServices"
-                data-dropdown-toggle="dropdownNavbarServices"
+                id="dropdownLayananLink"
+                data-dropdown-toggle="dropdownLayanan"
                 className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
                   !isScrolled && isHome ? "text-white" : "text-black"
                 }`}
               >
-                Layanan
+                Layanan Akademik
                 <svg
                   className="w-2.5 h-2.5 ms-2.5"
                   aria-hidden="true"
@@ -258,60 +346,8 @@ const Navbar = () => {
                 </svg>
               </button>
               <div
-                id="dropdownNavbarServices"
-                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-              >
-                <ul
-                  className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                  aria-labelledby="dropdownLargeButtonServices"
-                >
-                  <li>
-                    <a
-                      href="layanan-mahasiswa"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      LAYANAN MAHASISWA
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="layanan-akademik"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      LAYANAN AKADEMIK
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <button
-                id="dropdownNavbarLinkStudentAffairs"
-                data-dropdown-toggle="dropdownNavbarStudentAffairs"
-                className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
-                  !isScrolled && isHome ? "text-white" : "text-black"
-                }`}
-              >
-                Kemahasiswaan
-                <svg
-                  className="w-2.5 h-2.5 ms-2.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </button>
-              <div
-                id="dropdownNavbarStudentAffairs"
-                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                id="dropdownLayanan"
+                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
               >
                 <ul
                   className="py-2 text-sm text-gray-700 dark:text-gray-200"
@@ -319,84 +355,68 @@ const Navbar = () => {
                 >
                   <li>
                     <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Himpunan Mahasiswa
+                      Info Akademik
                     </a>
                   </li>
-                  <li>
-                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      SOP Administrasi Fakultas
-                    </a>
-                  </li>
-                  <li>
-                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Beasiswa
-                    </a>
-                  </li>
-                  <li>
-                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Kegiatan Mahasiswa
-                    </a>
-                  </li>
-                  <li>
-                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Unit Kegiatan Mahasiswa
-                    </a>
-                  </li>
-                  <li>
-                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Prestasi
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <button
-                id="dropdownNavbarLinkFacilities"
-                data-dropdown-toggle="dropdownNavbarFacilities"
-                className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
-                  !isScrolled && isHome ? "text-white" : "text-black"
-                }`}
-              >
-                Fasilitas
-                <svg
-                  className="w-2.5 h-2.5 ms-2.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </button>
-              <div
-                id="dropdownNavbarFacilities"
-                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-              >
-                <ul
-                  className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                  aria-labelledby="dropdownLargeButtonFacilities"
-                >
-                  <li>
-                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Laboratorium
-                    </a>
-                  </li>
-                  <li>
-                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Perpustakaan
-                    </a>
-                  </li>
-                  <li>
-                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
-                      Kelas
-                    </a>
+                  <li aria-labelledby="dropdownLayananMahasiswaLink">
+                    <button
+                      id="dropdownLayananMahasiswaLink"
+                      data-dropdown-toggle="doubleDropdownLayananMahasiswa"
+                      data-dropdown-placement="right-start"
+                      type="button"
+                      class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 "
+                    >
+                      Layanan Mahasiswa
+                      <svg
+                        class="w-2.5 h-2.5 ms-2.5"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 1 4 4 4-4"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      id="doubleDropdownLayananMahasiswa"
+                      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                    >
+                      <ul
+                        class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                        aria-labelledby="dropdownPersonil"
+                      >
+                        <li>
+                          <a
+                            href="perpustakaan"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            Perpustakaan Digital
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="sila"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            sistem informasi layanan akademik (SILA)
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="sista"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            Sistem Informasi Tugas Akhir (SISTA)
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -407,40 +427,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
-// const Navbar = () => {
-//   const [isScrolled, setIsScrolled] = useState(false);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const scrollPosition = window.scrollY;
-//       if (scrollPosition > 0) {
-//         setIsScrolled(true);
-//       } else {
-//         setIsScrolled(false);
-//       }
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-//     return () => {
-//       window.removeEventListener("scroll", handleScroll);
-//     };
-//   }, []);
-
-//   return (
-//     <nav
-//       className={`fixed w-full z-10 ${
-//         isScrolled ? "bg-white shadow-md" : "bg-none"
-//       }`}
-//     >
-//       <div className="container mx-auto px-4">
-//         <div className="flex items-center justify-between py-4">
-//           <h1 className="text-xl font-semibold">Your Navbar</h1>
-//           {/* Add any navbar content here */}
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
 
 export default Navbar;
