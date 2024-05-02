@@ -33,7 +33,7 @@ const Beranda = () => {
           <a href="/profil">
             <button
               type="button"
-              className="text-xl bg-primary px-6 py-2 text-white rounded-lg border-b border-white mt-4 w-fit cursor-pointer z-100 cursor-pointer"
+              className="text-xl bg-primary px-6 py-2 text-white rounded-lg border-b border-white mt-4 w-fit cursor-pointer"
             >
               Lihat Profil
             </button>
@@ -46,16 +46,8 @@ const Beranda = () => {
         >
           <img src={sertifikatImg} alt="" />
         </div>
-        <a href="/profil">
-          <button
-            type="button"
-            className="text-xl bg-primary px-6 py-2 text-white rounded-lg border-b border-white mt-4 w-fit cursor-pointer z-100 cursor-pointer"
-          >
-            Lihat Profil
-          </button>
-        </a>
         {/* ------------ ----------------- */}
-        <div className="mb-20">
+        <div className="mb-20 w-4/5 mx-auto">
           <h2 className="text-center text-3xl mb-10">PIMPINAN</h2>
           <div className="flex gap-5">
             <div
@@ -98,7 +90,7 @@ const Beranda = () => {
                 >
                   <path
                     fill="#00627A"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.792C0 19.506.494 20 1.104 20h9.578v-7.745H8.076V9.237h2.606V7.01c0-2.584 1.578-3.99 3.883-3.99c1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.596-1.496 1.47v1.927h2.989l-.39 3.018h-2.6V20h5.097c.61 0 1.104-.494 1.104-1.104V1.104C20 .494 19.506 0 18.896 0"
                   />
                 </svg>
@@ -144,7 +136,7 @@ const Beranda = () => {
                 >
                   <path
                     fill="#00627A"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.792C0 19.506.494 20 1.104 20h9.578v-7.745H8.076V9.237h2.606V7.01c0-2.584 1.578-3.99 3.883-3.99c1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.596-1.496 1.47v1.927h2.989l-.39 3.018h-2.6V20h5.097c.61 0 1.104-.494 1.104-1.104V1.104C20 .494 19.506 0 18.896 0"
                   />
                 </svg>
@@ -190,7 +182,7 @@ const Beranda = () => {
                 >
                   <path
                     fill="#00627A"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.792C0 19.506.494 20 1.104 20h9.578v-7.745H8.076V9.237h2.606V7.01c0-2.584 1.578-3.99 3.883-3.99c1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.596-1.496 1.47v1.927h2.989l-.39 3.018h-2.6V20h5.097c.61 0 1.104-.494 1.104-1.104V1.104C20 .494 19.506 0 18.896 0"
                   />
                 </svg>
@@ -206,10 +198,10 @@ const Beranda = () => {
               title="ekonomi"
               width="100%"
               height="400"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
-              marginheight="0"
-              marginwidth="0"
+              marginHeight="0"
+              marginWidth="0"
               src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(fakultas%20ekonmi%20UNTAD)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             >
               <a href="https://www.gps.ie/">gps trackers</a>
