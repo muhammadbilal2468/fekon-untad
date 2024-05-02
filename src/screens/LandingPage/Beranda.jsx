@@ -13,7 +13,7 @@ const Beranda = () => {
     <>
       <div className="max-w-screen-xl mx-auto p-4">
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="absolute top-0 left-0 w-full h-full object-cover z-10"
           autoPlay
           loop
           muted
@@ -22,7 +22,7 @@ const Beranda = () => {
           <source src={bannerVid} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-2">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-2 z-20">
           <h1 className="text-white text-4xl font-sans font-bold">
             Akuntansi Sektor Publik
           </h1>
