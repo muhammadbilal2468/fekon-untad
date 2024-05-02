@@ -15,3 +15,4 @@ export { default as pmbutImg } from "./pmbut.jpg";
 export { default as transkripImg } from "./transkrip.jpg";
 export { default as fadhilImg } from "./fadhil.png";
 export { default as bilalImg } from "./bilal.jpg";
+export { default as bannerVid } from "./video/banner.mp4";

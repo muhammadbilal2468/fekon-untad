@@ -1,43 +1,71 @@
-import React from "react";
-import { bannerImg, pimpinanImg, sertifikatImg } from "../../assets";
+import React, { useEffect } from "react";
+import { bannerVid, pimpinanImg, sertifikatImg } from "../../assets";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+// ------------------------- UGM --------------------------
 
 const Beranda = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <div className="max-w-screen-xl mx-auto p-4">
-        <div className="flex gap-10 flex-row items-center h-[90vh]">
-          <div className="basis-3/5">
-            <h1 className="text-[42px] mb-5">
-              Selamat Datang Di Program Studi
-              <span className="text-primary font-bold">
-                {" "}
-                Akuntansi Sektor Publik{" "}
-              </span>
-              Dengan Semangat Yang Tak Terbatas
-            </h1>
-            <p className="text-lg text-gray-600">
-              Bersiaplah menyelami pengalaman belajar yang penuh warna, dan
-              sambutlah tantangan ini dengan kreativitas tak terbatas. Jadilah
-              arsitek masa depan di dunia keuangan bersama kami!
-            </p>
-          </div>
-          <div className="basis-2/5">
-            <img src={bannerImg} alt="" className="h-full w-full" />
-          </div>
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          style={{ filter: "brightness(0.6)" }}
+        >
+          <source src={bannerVid} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-2">
+          <h1 className="text-white text-4xl font-sans font-bold">
+            Akuntansi Sektor Publik
+          </h1>
+          <p className="text-lg text-gray-200 text-center">
+            Menyinari Masa Depan dengan Transparansi dan Integritas, Melangkah
+            Maju dengan Keahlian dan Dedikasi di Bidang Akuntansi Sektor Publik
+          </p>
+          <a href="/profil">
+            <button
+              type="button"
+              className="text-xl bg-primary px-6 py-2 text-white rounded-lg border-b border-white mt-4 w-fit cursor-pointer z-100 cursor-pointer"
+            >
+              Lihat Profil
+            </button>
+          </a>
         </div>
         {/* ------------ ----------------- */}
-        <div className="flex justify-center items-center mb-10">
+        <div
+          data-aos="zoom-in"
+          className="flex justify-center items-center mb-10 pt-[100vh]"
+        >
           <img src={sertifikatImg} alt="" />
         </div>
+        <a href="/profil">
+          <button
+            type="button"
+            className="text-xl bg-primary px-6 py-2 text-white rounded-lg border-b border-white mt-4 w-fit cursor-pointer z-100 cursor-pointer"
+          >
+            Lihat Profil
+          </button>
+        </a>
         {/* ------------ ----------------- */}
         <div className="mb-20">
           <h2 className="text-center text-3xl mb-10">PIMPINAN</h2>
           <div className="flex gap-5">
-            <div className="flex flex-col items-center basis-1/3 border rounded-md p-3 shadow-xl border-none pb-10">
+            <div
+              data-aos="zoom-in"
+              className="flex flex-col items-center basis-1/3 border rounded-md p-3 shadow-xl border-none pb-10"
+            >
               <img src={pimpinanImg} alt="" className="w-full h-96 mb-3" />
               <h3 className="text-2xl font-bold">Anto S.kom.</h3>
               <p className="text-md text-gray-600 font-bold mb-10">
-                Ketua Jurusan Ekonomi dan Bisnis
+                Ketua Jurusan Akuntansi
               </p>
               <div className="flex items-center justify-center gap-10">
                 <svg
@@ -76,11 +104,14 @@ const Beranda = () => {
                 </svg>
               </div>
             </div>
-            <div className="flex flex-col items-center basis-1/3 border rounded-md p-3 shadow-xl border-none pb-10">
+            <div
+              data-aos="zoom-in"
+              className="flex flex-col items-center basis-1/3 border rounded-md p-3 shadow-xl border-none pb-10"
+            >
               <img src={pimpinanImg} alt="" className="w-full h-96 mb-3" />
               <h3 className="text-2xl font-bold">Anto S.kom.</h3>
               <p className="text-md text-gray-600 font-bold mb-10">
-                Sekretaris Jurusan Ekonomi dan Bisnis
+                Sekretaris Jurusan Akuntansi
               </p>
               <div className="flex items-center justify-center gap-10">
                 <svg
@@ -119,7 +150,10 @@ const Beranda = () => {
                 </svg>
               </div>
             </div>
-            <div className="flex flex-col items-center basis-1/3 border rounded-md p-3 shadow-xl border-none pb-10">
+            <div
+              data-aos="zoom-in"
+              className="flex flex-col items-center basis-1/3 border rounded-md p-3 shadow-xl border-none pb-10"
+            >
               <img src={pimpinanImg} alt="" className="w-full h-96 mb-3" />
               <h3 className="text-2xl font-bold">Anto S.kom.</h3>
               <p className="text-md text-gray-600 font-bold mb-10">

@@ -7,9 +7,7 @@ const LandingPage = () => {
   return (
     <div className="">
       <Navbar />
-      {/* <div className="max-w-screen-xl mx-auto p-4"> */}
       <Outlet />
-      {/* </div> */}
       <Footer />
     </div>
   );

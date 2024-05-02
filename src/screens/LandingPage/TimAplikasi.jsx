@@ -22,7 +22,7 @@ const TimAplikasi = () => {
             <span class="text-lg text-gray-500 dark:text-gray-400">
               S1 Teknik Informatika
             </span>
-            <div class="flex mt-4 md:mt-6">
+            <div class="flex mt-4 md:mt-6 gap-3">
               <a
                 href="https://www.linkedin.com/in/muhammad-bilal-314888221/"
                 class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-primary border rounded-lg gap-2"
@@ -118,7 +118,7 @@ const TimAplikasi = () => {
             <span class="text-lg text-gray-500 dark:text-gray-400">
               S1 Teknik Informatika
             </span>
-            <div class="flex mt-4 md:mt-6">
+            <div class="flex mt-4 md:mt-6 gap-3">
               <a
                 href="https://www.linkedin.com/in/muhammad-fadhil-5168b21ba/"
                 class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-primary border rounded-lg gap-2"
