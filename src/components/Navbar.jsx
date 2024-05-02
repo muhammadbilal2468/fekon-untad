@@ -22,7 +22,7 @@ const Navbar = () => {
 
     const currentUrl = window.location.href; // Ambil URL saat ini di dalam useEffect
 
-    if (currentUrl === "http://localhost:3000/") {
+    if (currentUrl === "https://fekon-untad.vercel.app/") {
       setIsHome(true);
     }
 
