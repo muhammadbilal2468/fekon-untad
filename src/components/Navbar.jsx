@@ -4,7 +4,9 @@ import { untadImg } from "../assets";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHome, setIsHome] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State untuk mengontrol menu dropdown
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeDoubleDropdown, setActiveDoubleDropdown] = useState(null);
 
   const currentUrl = window.location.href;
   console.log(currentUrl);
@@ -32,6 +34,15 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleDropdown = (dropdownId) => {
+    setActiveDropdown(activeDropdown === dropdownId ? null : dropdownId);
+  };
+  const toggleDoubleDropdown = (dropdownId) => {
+    setActiveDoubleDropdown(
+      activeDoubleDropdown === dropdownId ? null : dropdownId
+    );
   };
 
   return (
@@ -105,10 +116,12 @@ const Navbar = () => {
                 Berita
               </a>
             </li>
-            <li>
+            <li
+              className="relative"
+              onMouseEnter={() => toggleDropdown("profil")}
+              onMouseLeave={() => toggleDropdown("")}
+            >
               <button
-                id="dropdownProfilLink"
-                data-dropdown-toggle="dropdownNavbarProfil"
                 className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
                   !isScrolled && isHome ? "text-white" : "text-black"
                 }`}
@@ -131,8 +144,9 @@ const Navbar = () => {
                 </svg>
               </button>
               <div
-                id="dropdownNavbarProfil"
-                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                className={`absolute z-10 ${
+                  activeDropdown === "profil" ? "block" : "hidden"
+                }  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
               >
                 <ul
                   className="py-2 text-sm text-gray-700 dark:text-gray-200"
@@ -178,14 +192,12 @@ const Navbar = () => {
                       Prestasi
                     </a>
                   </li>
-                  <li aria-labelledby="dropdownProfilLink">
-                    <button
-                      id="dropdownPersonil"
-                      data-dropdown-toggle="doubleDropdownPersonil"
-                      data-dropdown-placement="right-start"
-                      type="button"
-                      class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 "
-                    >
+                  <li
+                    className="relative"
+                    onMouseEnter={() => toggleDoubleDropdown("personil")}
+                    onMouseLeave={() => toggleDoubleDropdown("")}
+                  >
+                    <button class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 ">
                       Personil
                       <svg
                         class="w-2.5 h-2.5 ms-2.5"
@@ -204,13 +216,11 @@ const Navbar = () => {
                       </svg>
                     </button>
                     <div
-                      id="doubleDropdownPersonil"
-                      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                      class={`z-10 ${
+                        activeDoubleDropdown === "personil" ? "block" : "hidden"
+                      } bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
                     >
-                      <ul
-                        class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                        aria-labelledby="dropdownPersonil"
-                      >
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                         <li>
                           <a
                             href="pimpinan"
@@ -241,10 +251,12 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            <li>
+            <li
+              onMouseEnter={() => toggleDropdown("kinerja")}
+              onMouseLeave={() => toggleDropdown("")}
+            >
               <button
                 id="dropdownNavbarLinkKinerja"
-                data-dropdown-toggle="dropdownNavbarKinerja"
                 className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
                   !isScrolled && isHome ? "text-white" : "text-black"
                 }`}
@@ -268,7 +280,9 @@ const Navbar = () => {
               </button>
               <div
                 id="dropdownNavbarKinerja"
-                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 w-44 rounded-lg shadow"
+                className={`absolute z-10 ${
+                  activeDropdown === "kinerja" ? "block" : "hidden"
+                }  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
               >
                 <ul
                   className="py-2 text-sm text-gray-700 dark:text-gray-200"
@@ -328,10 +342,11 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            <li>
+            <li
+              onMouseEnter={() => toggleDropdown("layanan")}
+              onMouseLeave={() => toggleDropdown("")}
+            >
               <button
-                id="dropdownLayananLink"
-                data-dropdown-toggle="dropdownLayanan"
                 className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
                   !isScrolled && isHome ? "text-white" : "text-black"
                 }`}
@@ -354,26 +369,24 @@ const Navbar = () => {
                 </svg>
               </button>
               <div
-                id="dropdownLayanan"
-                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                className={`absolute z-10 ${
+                  activeDropdown === "layanan" ? "block" : "hidden"
+                }  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
               >
-                <ul
-                  className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                  aria-labelledby="dropdownLargeButtonStudentAffairs"
-                >
+                <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
                   <li>
                     <a href=" " className="block px-4 py-2 hover:bg-gray-100">
                       Info Akademik
                     </a>
                   </li>
-                  <li aria-labelledby="dropdownLayananMahasiswaLink">
-                    <button
-                      id="dropdownLayananMahasiswaLink"
-                      data-dropdown-toggle="doubleDropdownLayananMahasiswa"
-                      data-dropdown-placement="right-start"
-                      type="button"
-                      class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 "
-                    >
+                  <li
+                    className="relative"
+                    onMouseEnter={() =>
+                      toggleDoubleDropdown("layananmahasiswa")
+                    }
+                    onMouseLeave={() => toggleDoubleDropdown("")}
+                  >
+                    <button class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 ">
                       Layanan Mahasiswa
                       <svg
                         class="w-2.5 h-2.5 ms-2.5"
@@ -392,13 +405,13 @@ const Navbar = () => {
                       </svg>
                     </button>
                     <div
-                      id="doubleDropdownLayananMahasiswa"
-                      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                      class={`z-10 ${
+                        activeDoubleDropdown === "layananmahasiswa"
+                          ? "block"
+                          : "hidden"
+                      } bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
                     >
-                      <ul
-                        class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                        aria-labelledby="dropdownPersonil"
-                      >
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                         <li>
                           <a
                             href="perpustakaan"
