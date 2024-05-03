@@ -22,18 +22,18 @@ const Beranda = () => {
           <source src={bannerVid} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute top-1/2 left-4/8 -translate-x-4/8 -translate-y-1/2 xl:-translate-x-4/8 xl:-translate-y-1/2 flex flex-col items-center gap-2 z-20">
-          <h1 className="text-white xl:text-4xl font-sans font-bold text-center text-2xl">
+        <div className="absolute top-1/2 left-4/8 -translate-x-4/8 -translate-y-1/2 lg:-translate-x-4/8 lg:-translate-y-1/2 flex flex-col items-center gap-2 z-20">
+          <h1 className="text-white lg:text-4xl font-sans font-bold text-center text-2xl">
             Akuntansi Sektor Publik
           </h1>
-          <p className="xl:text-lg text-sm text-gray-200 text-center">
+          <p className="lg:text-lg text-sm text-gray-200 text-center">
             Menyinari Masa Depan dengan Transparansi dan Integritas, Melangkah
             Maju dengan Keahlian dan Dedikasi di Bidang Akuntansi Sektor Publik
           </p>
           <a href="/profil">
             <button
               type="button"
-              className="xl:text-xl text-md bg-primary px-6 py-2 text-white rounded-lg border-b border-white mt-4 w-fit cursor-pointer"
+              className="lg:text-xl text-md bg-primary px-6 py-2 text-white rounded-lg border-b border-white mt-4 w-fit cursor-pointer"
             >
               Lihat Profil
             </button>
