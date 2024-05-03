@@ -14,7 +14,7 @@ const KurikulumAkademik = () => {
 
   console.log("matkul", matkul);
   return (
-    <div className="max-w-screen-xl mx-auto p-4 mb-96">
+    <div className="max-w-screen-xl mx-auto xl:p-4 p-2 mb-96">
       <h2 className="text-4xl font-bold text-center my-10">
         KURIKULUM AKADEMIK
       </h2>

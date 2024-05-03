@@ -4,7 +4,7 @@ import { pimpinanImg } from "../../../../assets";
 const Pimpinan = () => {
   return (
     <>
-      <div className="mb-20 w-4/5 mx-auto  pt-[100vh]">
+      <div className="mb-20 w-4/5 mx-auto pt-[100vh]">
         <h2 className="text-center text-3xl mb-10">PIMPINAN</h2>
         <div className="flex gap-5">
           <div

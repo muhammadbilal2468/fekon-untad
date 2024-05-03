@@ -4,54 +4,51 @@ import dosenData from "../../../../data/dosen.json";
 const Dosen = () => {
   return (
     <div className="max-w-screen-xl mx-auto p-4">
-      <h2 className="text-4xl font-bold text-center my-10">
+      <h2 className="xl:text-4xl text-lg font-bold text-center my-10">
         DAFTAR PENGAJAR PRODI AKUNTANSI SEKTOR PUBLIK
       </h2>
       <div className="overflow-x-auto relative">
-        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <table className="w-full xl:text-sm text-[10px] text-left text-gray-500">
+          <thead className="text-gray-700 uppercase bg-gray-50">
             <tr className="bg-primary text-white">
-              <th scope="col" className="py-3 px-6">
+              <th scope="col" className="py-3 px-2">
                 No
               </th>
-              <th scope="col" className="py-3 px-6">
+              <th scope="col" className="py-3 px-2">
                 Nama Dosen
               </th>
-              <th scope="col" className="py-3 px-6">
+              <th scope="col" className="py-3 px-2">
                 Status
               </th>
-              <th scope="col" className="py-3 px-6">
+              <th scope="col" className="py-3 px-2">
                 NIDN/NIDK
               </th>
-              <th scope="col" className="py-3 px-6">
+              <th scope="col" className="py-3 px-2">
                 Jabatan Akademik
               </th>
-              <th scope="col" className="py-3 px-6">
+              <th scope="col" className="py-3 px-2">
                 Akademisi/Praktisi
               </th>
-              <th scope="col" className="py-3 px-6">
+              <th scope="col" className="py-3 px-2">
                 Pendidikan Pasca Sarjana
               </th>
             </tr>
           </thead>
           <tbody>
             {dosenData.map((dosen, index) => (
-              <tr
-                key={index}
-                className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-              >
+              <tr key={index} className="bg-white border-b">
                 <th
                   scope="row"
-                  className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  className="py-4 px-2 font-medium text-gray-900 whitespace-nowrap"
                 >
                   {dosen.NO}
                 </th>
-                <td className="py-4 px-6">{dosen.NAMA_DOSEN}</td>
-                <td className="py-4 px-6">{dosen.STATUS}</td>
-                <td className="py-4 px-6">{dosen["NIDN/NIDK"]}</td>
-                <td className="py-4 px-6">{dosen.JABATAN_AKADEMIK}</td>
-                <td className="py-4 px-6">{dosen.AKADEMISI_PRAKTISI}</td>
-                <td className="py-4 px-6">
+                <td className="py-4 px-2">{dosen.NAMA_DOSEN}</td>
+                <td className="py-4 px-2">{dosen.STATUS}</td>
+                <td className="py-4 px-2">{dosen["NIDN/NIDK"]}</td>
+                <td className="py-4 px-2">{dosen.JABATAN_AKADEMIK}</td>
+                <td className="py-4 px-2">{dosen.AKADEMISI_PRAKTISI}</td>
+                <td className="py-4 px-2">
                   <ul>
                     <li class="flex">
                       <svg
