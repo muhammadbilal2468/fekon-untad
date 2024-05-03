@@ -207,7 +207,7 @@ const Navbar = () => {
                       </svg>
                     </button>
                     <div
-                      class={`z-10 ${
+                      class={`absolute -bottom-20 -right-44 z-10 ${
                         activeDoubleDropdown === "personil" ? "block" : "hidden"
                       } bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
                     >
@@ -328,6 +328,7 @@ const Navbar = () => {
               </div>
             </li>
             <li
+              className="relative"
               onMouseEnter={() => toggleDropdown("layanan")}
               onMouseLeave={() => toggleDropdown("")}
             >
@@ -390,11 +391,11 @@ const Navbar = () => {
                       </svg>
                     </button>
                     <div
-                      class={`z-10 ${
+                      class={`absolute -bottom-32 -left-56 z-10 ${
                         activeDoubleDropdown === "layananmahasiswa"
                           ? "block"
                           : "hidden"
-                      } bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
+                      } bg-white divide-y divide-gray-100 rounded-lg shadow w-56`}
                     >
                       <ul class="py-2 text-sm text-gray-700">
                         <li>
