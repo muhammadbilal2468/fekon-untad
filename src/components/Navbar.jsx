@@ -207,7 +207,7 @@ const Navbar = () => {
                       </svg>
                     </button>
                     <div
-                      class={`absolute -bottom-20 -right-44 z-10 ${
+                      class={`absolute z-10 ${
                         activeDoubleDropdown === "personil" ? "block" : "hidden"
                       } bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
                     >
@@ -391,7 +391,7 @@ const Navbar = () => {
                       </svg>
                     </button>
                     <div
-                      class={`absolute -bottom-32 -left-56 z-10 ${
+                      class={`absolute z-10 ${
                         activeDoubleDropdown === "layananmahasiswa"
                           ? "block"
                           : "hidden"
