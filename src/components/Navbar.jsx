@@ -122,7 +122,7 @@ const Navbar = () => {
               onMouseLeave={() => toggleDropdown("")}
             >
               <button
-                className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
+                className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 md:border-0 md:p-0 md:w-auto ${
                   !isScrolled && isHome ? "text-white" : "text-black"
                 }`}
               >
@@ -257,7 +257,7 @@ const Navbar = () => {
             >
               <button
                 id="dropdownNavbarLinkKinerja"
-                className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
+                className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 md:border-0 md:p-0 md:w-auto ${
                   !isScrolled && isHome ? "text-white" : "text-black"
                 }`}
               >
@@ -347,7 +347,7 @@ const Navbar = () => {
               onMouseLeave={() => toggleDropdown("")}
             >
               <button
-                className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
+                className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 md:border-0 md:p-0 md:w-auto ${
                   !isScrolled && isHome ? "text-white" : "text-black"
                 }`}
               >
