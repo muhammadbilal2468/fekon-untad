@@ -15,7 +15,7 @@ const VisiMisi = () => {
   return (
     <>
       <HeaderPage title="Visi Misi" />
-      <div className="flex flex-col">
+      <div className="flex flex-col xl:p-0 p-4">
         <img
           src={visiImg}
           alt=""

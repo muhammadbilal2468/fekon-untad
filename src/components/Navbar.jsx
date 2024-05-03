@@ -66,7 +66,7 @@ const Navbar = () => {
         <button
           onClick={toggleMenu} // Menggunakan onClick untuk mengubah status menu dropdown
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-expanded={isMenuOpen ? "true" : "false"} // Atur aria-expanded berdasarkan status menu dropdown
         >
           <span className="sr-only">Open main menu</span>
@@ -149,7 +149,7 @@ const Navbar = () => {
                 }  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
               >
                 <ul
-                  className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                  className="py-2 text-sm text-gray-700 "
                   aria-labelledby="dropdownLargeButton"
                 >
                   <li>
@@ -161,18 +161,12 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="sejarah"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
+                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
                       Sejarah
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="organisasi"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
+                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
                       Organisasi
                     </a>
                   </li>
@@ -185,10 +179,7 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="prestasi"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
+                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
                       Prestasi
                     </a>
                   </li>
@@ -220,10 +211,10 @@ const Navbar = () => {
                         activeDoubleDropdown === "personil" ? "block" : "hidden"
                       } bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
                     >
-                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                      <ul class="py-2 text-sm text-gray-700">
                         <li>
                           <a
-                            href="pimpinan"
+                            href=" "
                             className="block px-4 py-2 hover:bg-gray-100"
                           >
                             Pimpinan
@@ -239,7 +230,7 @@ const Navbar = () => {
                         </li>
                         <li>
                           <a
-                            href="staff"
+                            href=" "
                             className="block px-4 py-2 hover:bg-gray-100"
                           >
                             Staff
@@ -282,10 +273,10 @@ const Navbar = () => {
                 id="dropdownNavbarKinerja"
                 className={`absolute z-10 ${
                   activeDropdown === "kinerja" ? "block" : "hidden"
-                }  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
+                }  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-56`}
               >
                 <ul
-                  className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                  className="py-2 text-sm text-gray-700"
                   aria-labelledby="dropdownLargeButtonKinerja"
                 >
                   <li>
@@ -299,10 +290,7 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="kurikulum-akademik"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
+                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
                       Kemahasiswaan
                     </a>
                   </li>
@@ -322,10 +310,7 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="kurikulum-akademik"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
+                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
                       Penelitian
                     </a>
                   </li>
@@ -371,9 +356,9 @@ const Navbar = () => {
               <div
                 className={`absolute z-10 ${
                   activeDropdown === "layanan" ? "block" : "hidden"
-                }  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
+                }  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-56`}
               >
-                <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+                <ul className="py-2 text-sm text-gray-700">
                   <li>
                     <a href=" " className="block px-4 py-2 hover:bg-gray-100">
                       Info Akademik
@@ -386,7 +371,7 @@ const Navbar = () => {
                     }
                     onMouseLeave={() => toggleDoubleDropdown("")}
                   >
-                    <button class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 ">
+                    <button class="flex justify-between w-full px-4 py-2 hover:bg-gray-100 ">
                       Layanan Mahasiswa
                       <svg
                         class="w-2.5 h-2.5 ms-2.5"
@@ -411,10 +396,11 @@ const Navbar = () => {
                           : "hidden"
                       } bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
                     >
-                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                      <ul class="py-2 text-sm text-gray-700">
                         <li>
                           <a
-                            href="perpustakaan"
+                            href="https://estd.perpus.untad.ac.id/"
+                            target="#blank"
                             className="block px-4 py-2 hover:bg-gray-100"
                           >
                             Perpustakaan Digital
@@ -422,7 +408,8 @@ const Navbar = () => {
                         </li>
                         <li>
                           <a
-                            href="sila"
+                            href="https://sila.fekon.untad.ac.id:8443/Akademik/"
+                            target="#blank"
                             className="block px-4 py-2 hover:bg-gray-100"
                           >
                             sistem informasi layanan akademik (SILA)
@@ -430,7 +417,8 @@ const Navbar = () => {
                         </li>
                         <li>
                           <a
-                            href="sista"
+                            href="https://fekon.untad.ac.id/sista/auth"
+                            target="#blank"
                             className="block px-4 py-2 hover:bg-gray-100"
                           >
                             Sistem Informasi Tugas Akhir (SISTA)

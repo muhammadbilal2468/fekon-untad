@@ -107,12 +107,11 @@ const Footer = () => {
           <span className="xl:text-sm text-xs text-white sm:text-center">
             © 2024{" "}
             <a
-              href="https://flowbite.com/"
+              href=" "
               className="hover:underline text-slate-200 xl:text-base text-xs"
             >
               Akuntansi Sektor Publik
             </a>
-            . All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a

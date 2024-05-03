@@ -6,8 +6,8 @@ const TimAplikasi = () => {
   return (
     <>
       <HeaderPage title="Tim Aplikasi" />
-      <div className="max-w-screen-xl mx-auto p-4">
-        <h2 className="xl:text-3xl text-2xl font-bold text-center my-10">
+      <div className="max-w-screen-xl mx-auto xl:p-0 p-4">
+        <h2 className="xl:text-3xl text-2xl font-bold text-center mb-10">
           Tim Pengembang Website
         </h2>
         <div className="flex justify-center xl:gap-16 gap-4">

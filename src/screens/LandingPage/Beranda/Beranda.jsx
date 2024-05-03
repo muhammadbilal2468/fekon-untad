@@ -11,7 +11,7 @@ const Beranda = () => {
   }, []);
   return (
     <>
-      <div className="max-w-screen-xl mx-auto p-4">
+      <div className="max-w-screen-xl mx-auto xl:p-0 p-4">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-10"
           autoPlay

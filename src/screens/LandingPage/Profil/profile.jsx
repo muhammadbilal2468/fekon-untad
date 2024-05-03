@@ -14,7 +14,7 @@ const Profil = () => {
   }, []);
   return (
     <>
-      <div className="max-w-screen-xl mx-auto p-4">
+      <div className="max-w-screen-xl mx-auto xl:p-0 p-4">
         <div className="relative mb-10 rounded-2xl border-primary">
           <div className="relative w-full rounded-t-3xl h-60">
             <img
