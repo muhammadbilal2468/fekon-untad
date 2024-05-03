@@ -7,7 +7,7 @@ const HeaderPage = (props) => {
       <img
         src={headerImg}
         className="w-full h-full absolute"
-        style={{ filter: "brightness(0.6)" }}
+        style={{ filter: "brightness(0.4)" }}
         alt=""
       />
       <h1 className="absolute xl:bottom-9 bottom-3 xl:right-32 right-4 xl:text-4xl text-2xl text-primary font-bold">

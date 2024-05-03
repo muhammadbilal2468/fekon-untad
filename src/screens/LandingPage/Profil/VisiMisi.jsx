@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { misiImg, visiImg } from "../../../assets";
 import visiMisi from "../../../data/visimisi.json";
+import HeaderPage from "../../../components/HeaderPage";
 
 const VisiMisi = () => {
   const [misi, setMisi] = useState([]);
@@ -13,6 +14,7 @@ const VisiMisi = () => {
 
   return (
     <>
+      <HeaderPage title="Visi Misi" />
       <div className="flex flex-col">
         <img
           src={visiImg}
