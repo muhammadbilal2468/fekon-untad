@@ -4,7 +4,6 @@ import { untadImg } from "../assets";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHome, setIsHome] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State untuk mengontrol menu dropdown
 
   const currentUrl = window.location.href;
   console.log(currentUrl);
@@ -30,10 +29,6 @@ const Navbar = () => {
     };
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <nav
       className={`sticky top-0 z-50 text-white ${
@@ -51,12 +46,12 @@ const Navbar = () => {
             Akuntansi Sektor Publik
           </span>
         </a>
-        {/* Tombol hamburger */}
         <button
-          onClick={toggleMenu} // Menggunakan onClick untuk mengubah status menu dropdown
+          data-collapse-toggle="navbar-multi-level"
           type="button"
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-expanded={isMenuOpen ? "true" : "false"} // Atur aria-expanded berdasarkan status menu dropdown
+          aria-controls="navbar-multi-level"
+          aria-expanded="false"
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -75,11 +70,8 @@ const Navbar = () => {
             />
           </svg>
         </button>
-        {/* Konten menu dropdown */}
         <div
-          className={`${
-            isMenuOpen ? "block" : "hidden"
-          } w-full md:block md:w-auto`}
+          className="hidden w-full md:block md:w-auto"
           id="navbar-multi-level"
         >
           <ul
