@@ -2,6 +2,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 import { bannerVid } from "../../../assets";
+import prestasi from "../../../data/prestasi.json";
+import berita from "../../../data/berita.json";
+import { Link } from "react-router-dom";
 
 // ------------------------- UGM --------------------------
 
@@ -14,6 +17,8 @@ const Beranda = () => {
   }, []);
   return (
     <>
+      {/* ------------ ----------------- */}
+      <div className="pt-[100vh]"></div>
       <div className="max-w-screen-xl mx-auto xl:p-0 p-4">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-10"
@@ -25,7 +30,7 @@ const Beranda = () => {
           <source src={bannerVid} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 xl:-translate-x-1/2 xl:-translate-y-1/2 flex flex-col items-center justify-center z-20">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 xl:-translate-x-1/2 xl:-translate-y-1/2 flex flex-col items-center justify-center z-20 gap-4">
           <h1 className="text-white xl:text-4xl font-sans font-bold text-center text-2xl">
             Akuntansi Sektor Publik
           </h1>
@@ -33,22 +38,16 @@ const Beranda = () => {
             Menyinari Masa Depan dengan Transparansi dan Integritas, Melangkah
             Maju dengan Keahlian dan Dedikasi di Bidang Akuntansi Sektor Publik
           </p>
-          <a href="/profil">
-            <button
-              type="button"
-              className="xl:text-xl text-md bg-primary px-6 py-2 text-white rounded-lg border-b border-white mt-4 w-fit cursor-pointer"
-            >
+          <Link to={"/prestasi"}>
+            <button className="bg-primary text-white py-2 px-6 rounded-xl">
               Lihat Profil
             </button>
-          </a>
+          </Link>
         </div>
-
-        {/* ------------ ----------------- */}
-        <div className="pt-[100vh]"></div>
 
         {/* ------------------------------ */}
         <div className="mb-10">
-          <h2 className="text-right text-primary text-2xl font-bold mb-2">
+          <h2 className="xl:text-end text-start text-primary text-2xl font-bold mb-2">
             Prestasi
           </h2>
           <div className="flex xl:flex-row flex-col gap-10 xl:h-96 h-fit">
@@ -60,7 +59,7 @@ const Beranda = () => {
               />
             </div>
             <div className="flex flex-col justify-between xl:gap-2 gap-4 xl:w-5/12 w-full">
-              {Array.from({ length: prestasiCount }).map((_, index) => (
+              {prestasi.slice(0, 3).map((item, index) => (
                 <div key={index} className="flex gap-2 h-1/3">
                   <img
                     src="https://source.unsplash.com/random"
@@ -84,12 +83,19 @@ const Beranda = () => {
               ))}
             </div>
           </div>
+          <Link to={"/prestasi"}>
+            <div className="flex xl:justify-end justify-center">
+              <button className="bg-primary text-white py-2 px-6 rounded-xl mt-10">
+                Lebih Banyak
+              </button>
+            </div>
+          </Link>
           <h2 className="text-primary text-2xl font-bold mt-10 mb-2">
             Berita Terbaru
           </h2>
           <div className="grid xl:grid-cols-4 grid-cols-2 gri gap-4">
-            {Array.from({ length: beritaCount }).map((_, index) => (
-              <div className="flex flex-col gap-2">
+            {berita.slice(0, 8).map((item, index) => (
+              <div key={index} className="flex flex-col gap-2">
                 <img
                   src="https://source.unsplash.com/random"
                   alt=""
@@ -97,20 +103,30 @@ const Beranda = () => {
                 />
                 <div className="flex flex-col gap-2">
                   <div className="flex xl:text-xs text-[8px] gap-1 justify-between">
-                    <p className="font-bold">Aura Dwi Kartika</p>
-                    <p className="">2 Desember 2024</p>
+                    <p className="font-bold">{item.nama}</p>
+                    <p className="">{item.tanggal}</p>
                   </div>
                   <p className="font-bold xl:text-sm text-[10px]">
-                    The 5th International Public Sector Conference (IPSC) 2023
+                    {item.judul.length > 100
+                      ? `${item.judul.slice(0, 40)}...`
+                      : item.judul}
                   </p>
                   <p className="text-gray-500 text-xs text-[9px] text-justify">
-                    International Public Sector Conference (IPSC) Ke-5 2023
-                    diselenggarakan oleh Fakultas Ekonomi dan Bisnis
+                    {item.desk.length > 100
+                      ? `${item.desk.slice(0, 100)}...`
+                      : item.desk}
                   </p>
                 </div>
               </div>
             ))}
           </div>
+          <Link to={"/berita"}>
+            <div className="flex justify-center">
+              <button className="bg-primary text-white py-2 px-6 rounded-xl mt-10">
+                Lebih Banyak
+              </button>
+            </div>
+          </Link>
         </div>
       </div>
     </>

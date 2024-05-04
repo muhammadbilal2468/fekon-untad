@@ -19,7 +19,7 @@ const VisiMisi = () => {
         <img
           src={visiImg}
           alt=""
-          className="absolute xl:block hidden left-0 mt-32"
+          className="absolute xl:block hidden left-0 mt-3"
         />
         <img
           src={misiImg}
@@ -43,11 +43,14 @@ const VisiMisi = () => {
               <div className="grid xl:grid-cols-3 grid-cols-2 xl:gap-10 gap-3">
                 {misi.map((misi, index) => {
                   return (
-                    <div className="flex flex-col border-primary rounded-lg shadow-lg shadow-primary bg-white xl:p-6 p-4 gap-5">
-                      <p className="text-primary xl:text-5xl text-2xl font-bold xl:text-start text-center">
+                    <div
+                      key={index}
+                      className="flex flex-col border-primary rounded-lg shadow-lg shadow-primary bg-white xl:p-6 p-4 xl:gap-5 gap-1"
+                    >
+                      <p className="text-primary xl:text-5xl text-lg font-bold xl:text-start text-center">
                         {1 + index}
                       </p>
-                      <p className="xl:text-lg text-sm text-gray-500 xl:text-justify text-center">
+                      <p className="xl:text-lg text-[10px] text-gray-500 xl:text-justify text-center">
                         {misi}
                       </p>
                     </div>
