@@ -108,7 +108,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/"
+                href="/berita"
                 className={`block py-2 px-3 rounded md:p-0 ${
                   !isScrolled && isHome ? "text-white" : "text-black"
                 }`}
@@ -182,7 +182,10 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <a href=" " className="block px-4 py-2 hover:bg-gray-100">
+                    <a
+                      href="/prestasi"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
                       Prestasi
                     </a>
                   </li>

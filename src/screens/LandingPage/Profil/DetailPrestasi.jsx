@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
-import berita from "../../../data/berita.json";
+import prestasi from "../../../data/prestasi.json";
 import HeaderPage from "../../../components/HeaderPage";
 
-const DetailBerita = () => {
+const DetailPrestasi = () => {
   const params = useParams();
   const [id, setId] = useState(params.id);
 
@@ -11,20 +11,20 @@ const DetailBerita = () => {
     setId(params.id);
   }, [params.id]);
 
-  const detailBerita = berita.find((item) => item.id === parseInt(id));
+  const detailPrestasi = prestasi.find((item) => item.id === parseInt(id));
 
   const navigate = useNavigate();
 
   const navigateToDetail = (id) => {
-    navigate(`/detail-berita/${id}`);
+    navigate(`/detail-prestasi/${id}`);
   };
 
   return (
     <>
-      <HeaderPage title="Detail Berita" />
+      <HeaderPage title="Detail Prestasi" />
       <div className="max-w-screen-xl mx-auto xl:p-0 p-4">
         <h2 className="xl:text-2xl text-lg font-bold text-justify xl:w-4/6 w-full mb-5">
-          {detailBerita.judul}
+          {detailPrestasi.judul}
         </h2>
         <div className="flex xl:flex-row flex-col gap-10">
           <div className="xl:w-4/6 w-full flex flex-col gap-5">
@@ -34,15 +34,15 @@ const DetailBerita = () => {
               className="w-full h-96 rounded-xl"
             />
             <p className="text-justify">
-              <span className="font-bold">{detailBerita.nama} - </span>{" "}
-              {detailBerita.desk}
+              <span className="font-bold">{detailPrestasi.nama} - </span>{" "}
+              {detailPrestasi.desk}
             </p>
           </div>
           <div className="xl:w-2/6 w-full flex flex-col">
-            <h3 className="text-xl font-bold mb-5">Berita Lainnya</h3>
+            <h3 className="text-xl font-bold mb-5">Prestasi Lainnya</h3>
             <div className="xl:flex grid grid-cols-2 xl:flex-col xl:gap-0 gap-3 overflow-x-auto">
-              {berita
-                .slice(0, 5)
+              {prestasi
+                .slice(0, 3)
                 .sort(() => Math.random() - 0.5)
                 .map((item, index) => (
                   <div
@@ -68,4 +68,4 @@ const DetailBerita = () => {
   );
 };
 
-export default DetailBerita;
+export default DetailPrestasi;

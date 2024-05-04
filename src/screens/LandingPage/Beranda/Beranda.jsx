@@ -12,13 +12,18 @@ import { useNavigate } from "react-router-dom";
 const Beranda = () => {
   const navigate = useNavigate();
 
-  const navigateToDetail = (id) => {
+  const navigateToDetailBerita = (id) => {
     navigate(`/detail-berita/${id}`);
+  };
+
+  const navigateToDetailPrestasi = (id) => {
+    navigate(`/detail-prestasi/${id}`);
   };
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
   return (
     <>
       {/* ------------ ----------------- */}
@@ -64,15 +69,19 @@ const Beranda = () => {
             </div>
             <div className="flex flex-col justify-between xl:gap-2 gap-4 xl:w-5/12 w-full">
               {prestasi.slice(0, 3).map((item, index) => (
-                <div key={index} className="flex gap-2 h-1/3">
+                <div
+                  key={index}
+                  className="flex gap-2 h-1/3 cursor-pointer"
+                  onClick={() => navigateToDetailPrestasi(item.id)}
+                >
                   <img
                     src="https://source.unsplash.com/random"
                     alt=""
-                    className="xl:w-36 w-64 rounded-xl xl:h-full h-32"
+                    className="xl:w-36 w-64 rounded-xl xl:h-full h-28"
                   />
                   <div className="flex flex-col gap-3">
-                    <div className="flex xl:text-xs text-[8px] gap-1 justify-between">
-                      <p className="font-bold">Aura Dwi Kartika</p>
+                    <div className="flex xl:text-xs text-[9px] gap-1 justify-between">
+                      <p className="font-bold">{item.nama}</p>
                       <p className="">2 Desember 2024</p>
                     </div>
                     <p className="font-bold xl:text-sm text-[10px]">
@@ -102,7 +111,7 @@ const Beranda = () => {
               <div
                 key={index}
                 className="flex flex-col gap-2 cursor-pointer"
-                onClick={() => navigateToDetail(item.id)}
+                onClick={() => navigateToDetailBerita(item.id)}
               >
                 <img
                   src="https://source.unsplash.com/random"
@@ -110,7 +119,7 @@ const Beranda = () => {
                   className="w-full h-36 rounded-xl"
                 />
                 <div className="flex flex-col gap-2">
-                  <div className="flex xl:text-xs text-[8px] gap-1 justify-between">
+                  <div className="flex xl:text-xs text-[9px] gap-1 justify-between">
                     <p className="font-bold">{item.nama}</p>
                     <p className="">{item.tanggal}</p>
                   </div>
