@@ -1,10 +1,10 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
-import { bannerVid } from "../../../assets";
-import prestasi from "../../../data/prestasi.json";
-import berita from "../../../data/berita.json";
 import { Link } from "react-router-dom";
+import { bannerVid } from "../../../assets";
+import berita from "../../../data/berita.json";
+import prestasi from "../../../data/prestasi.json";
 
 // ------------------------- UGM --------------------------
 
@@ -38,7 +38,7 @@ const Beranda = () => {
             Menyinari Masa Depan dengan Transparansi dan Integritas, Melangkah
             Maju dengan Keahlian dan Dedikasi di Bidang Akuntansi Sektor Publik
           </p>
-          <Link to={"/prestasi"}>
+          <Link to={"/sejarah"}>
             <button className="bg-primary text-white py-2 px-6 rounded-xl">
               Lihat Profil
             </button>

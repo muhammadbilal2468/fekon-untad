@@ -1,12 +1,12 @@
 import React from "react";
-import { headerImg } from "../assets";
+import { banner2Img } from "../assets";
 
 const HeaderPage = (props) => {
   return (
     <>
       <div className="relative w-full xl:h-80 h-36">
         <img
-          src={headerImg}
+          src={banner2Img}
           className="w-full h-full absolute"
           style={{ filter: "brightness(0.4)" }}
           alt=""
