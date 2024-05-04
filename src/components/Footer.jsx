@@ -38,7 +38,7 @@ const Footer = () => {
               <ul className="text-white font-medium">
                 <li className="mb-4">
                   <a
-                    href="kurikulum"
+                    href="/kurikulum"
                     className="hover:underline text-slate-200 xl:text-base text-xs"
                   >
                     Kurikulum
@@ -46,7 +46,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="visimisi"
+                    href="/visimisi"
                     className="hover:underline text-slate-200 xl:text-base text-xs"
                   >
                     Visi Misi
@@ -92,7 +92,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="tim-aplikasi"
+                    href="/tim-aplikasi"
                     className="hover:underline text-slate-200 xl:text-base text-xs"
                   >
                     Tim Aplikasi

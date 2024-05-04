@@ -1,16 +1,20 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { bannerVid } from "../../../assets";
 import berita from "../../../data/berita.json";
 import prestasi from "../../../data/prestasi.json";
+import { useNavigate } from "react-router-dom";
 
 // ------------------------- UGM --------------------------
 
 const Beranda = () => {
-  const [prestasiCount, setPrestasiCount] = useState(3);
-  const [beritaCount, setBeritaCount] = useState(8);
+  const navigate = useNavigate();
+
+  const navigateToDetail = (id) => {
+    navigate(`/detail-berita/${id}`);
+  };
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -64,7 +68,7 @@ const Beranda = () => {
                   <img
                     src="https://source.unsplash.com/random"
                     alt=""
-                    className="xl:w-36 w-64 bg-cover rounded-xl xl:h-full h-32"
+                    className="xl:w-36 w-64 rounded-xl xl:h-full h-32"
                   />
                   <div className="flex flex-col gap-3">
                     <div className="flex xl:text-xs text-[8px] gap-1 justify-between">
@@ -95,11 +99,15 @@ const Beranda = () => {
           </h2>
           <div className="grid xl:grid-cols-4 grid-cols-2 gri gap-4">
             {berita.slice(0, 8).map((item, index) => (
-              <div key={index} className="flex flex-col gap-2">
+              <div
+                key={index}
+                className="flex flex-col gap-2 cursor-pointer"
+                onClick={() => navigateToDetail(item.id)}
+              >
                 <img
                   src="https://source.unsplash.com/random"
                   alt=""
-                  className="w-full h-36 bg-cover rounded-xl"
+                  className="w-full h-36 rounded-xl"
                 />
                 <div className="flex flex-col gap-2">
                   <div className="flex xl:text-xs text-[8px] gap-1 justify-between">
