@@ -62,7 +62,7 @@ const Beranda = () => {
           <div className="flex xl:flex-row flex-col gap-10 xl:h-96 h-fit">
             <div className="relative w-7/12 h-full">
               <img
-                src="https://source.unsplash.com/random"
+                src="https://source.unsplash.com/featured/?campus"
                 alt=""
                 className="absolute w-full bg-cover rounded-xl h-full"
               />
@@ -75,7 +75,7 @@ const Beranda = () => {
                   onClick={() => navigateToDetailPrestasi(item.id)}
                 >
                   <img
-                    src="https://source.unsplash.com/random"
+                    src="https://source.unsplash.com/featured/?study"
                     alt=""
                     className="xl:w-36 w-64 rounded-xl xl:h-full h-28"
                   />
@@ -114,7 +114,7 @@ const Beranda = () => {
                 onClick={() => navigateToDetailBerita(item.id)}
               >
                 <img
-                  src="https://source.unsplash.com/random"
+                  src="https://source.unsplash.com/featured/?acounting"
                   alt=""
                   className="w-full h-36 rounded-xl"
                 />
@@ -128,7 +128,7 @@ const Beranda = () => {
                       ? `${item.judul.slice(0, 40)}...`
                       : item.judul}
                   </p>
-                  <p className="text-gray-500 text-xs text-[9px] text-justify">
+                  <p className="text-gray-500 xl:text-xs text-[9px] text-justify">
                     {item.desk.length > 100
                       ? `${item.desk.slice(0, 100)}...`
                       : item.desk}

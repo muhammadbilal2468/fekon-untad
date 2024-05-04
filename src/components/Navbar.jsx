@@ -154,7 +154,7 @@ const Navbar = () => {
                 >
                   <li>
                     <a
-                      href="visimisi"
+                      href="/visimisi"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Visi Misi
@@ -162,7 +162,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="sejarah"
+                      href="/sejarah"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Sejarah
@@ -175,7 +175,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="kurikulum"
+                      href="/kurikulum"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Kurikulum
@@ -228,7 +228,7 @@ const Navbar = () => {
                         </li>
                         <li>
                           <a
-                            href="dosen"
+                            href="/dosen"
                             className="block px-4 py-2 hover:bg-gray-100"
                           >
                             Dosen

@@ -21,7 +21,7 @@ const Prestasi = () => {
               onClick={() => navigateToDetailBerita(item.id)}
             >
               <img
-                src="https://source.unsplash.com/random"
+                src="https://source.unsplash.com/featured/?study"
                 alt=""
                 className="w-full h-36 rounded-xl"
               />

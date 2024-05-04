@@ -29,7 +29,7 @@ const DetailPrestasi = () => {
         <div className="flex xl:flex-row flex-col gap-10">
           <div className="xl:w-4/6 w-full flex flex-col gap-5">
             <img
-              src="https://source.unsplash.com/random"
+              src="https://source.unsplash.com/featured/?study"
               alt=""
               className="w-full h-96 rounded-xl"
             />
@@ -51,7 +51,7 @@ const DetailPrestasi = () => {
                     onClick={() => navigateToDetail(item.id)}
                   >
                     <img
-                      src="https://source.unsplash.com/random"
+                      src="https://source.unsplash.com/featured/?study"
                       alt=""
                       className="xl:w-1/2 w-1/3 xl:h-20 h-12 rounded-xl"
                     />
