@@ -19,12 +19,12 @@ const Kurikulum = () => {
     <>
       <HeaderPage title="Kurikulum" />
       <div className="max-w-screen-xl mx-auto xl:p-0 p-4">
-        <h2 className="text-4xl font-bold text-center my-10">
+        <h2 className="xl:text-4xl text-xl font-bold text-center mb-10">
           KURIKULUM AKADEMIK
         </h2>
-        {kurikulum.map((item, _) => {
+        {kurikulum.map((item, index) => {
           return (
-            <div className="mb-20 overflow-x-scroll">
+            <div key={index} className="mb-20 overflow-x-scroll">
               <h3 className="text-xl mb-2 font-bold text-primary">
                 Semester {item.semester}
               </h3>
