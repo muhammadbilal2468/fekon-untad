@@ -84,10 +84,10 @@ const Beranda = () => {
                       <p className="font-bold">{item.nama}</p>
                       <p className="">2 Desember 2024</p>
                     </div>
-                    <p className="font-bold xl:text-sm text-[10px]">
+                    <p className="font-bold xl:text-md text-sm">
                       The 5th International Public Sector Conference (IPSC) 2023
                     </p>
-                    <p className="text-gray-500 text-xs text-[9px] text-justify">
+                    <p className="text-gray-500 xl:text-sm text-[9px] text-justify">
                       International Public Sector Conference (IPSC) Ke-5 2023
                       diselenggarakan oleh Fakultas Ekonomi dan Bisnis
                     </p>
@@ -123,7 +123,7 @@ const Beranda = () => {
                     <p className="font-bold">{item.nama}</p>
                     <p className="">{item.tanggal}</p>
                   </div>
-                  <p className="font-bold xl:text-sm text-[10px]">
+                  <p className="font-bold xl:text-md text-sm">
                     {item.judul.length > 100
                       ? `${item.judul.slice(0, 40)}...`
                       : item.judul}
