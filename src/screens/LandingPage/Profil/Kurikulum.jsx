@@ -2,8 +2,15 @@ import React, { useEffect, useState } from "react";
 import { untadImg } from "../../../assets";
 import kurikulum from "../../../data/kurikulum.json";
 import HeaderPage from "../../../components/HeaderPage";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Kurikulum = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const [matkul, setMatkul] = useState([]);
 
   useEffect(() => {
@@ -13,18 +20,19 @@ const Kurikulum = () => {
     }
   }, []);
 
-  console.log("matkul", matkul);
-  console.log("kurikulum", kurikulum);
   return (
     <>
       <HeaderPage title="Kurikulum" />
       <div className="max-w-screen-xl mx-auto xl:p-0 p-4">
-        <h2 className="xl:text-4xl text-xl font-bold text-center mb-10">
+        <h2
+          className="xl:text-4xl text-xl font-bold text-center mb-10"
+          data-aos="fade-up"
+        >
           KURIKULUM AKADEMIK
         </h2>
         {kurikulum.map((item, index) => {
           return (
-            <div key={index} className="mb-20 overflow-x-scroll">
+            <div key={index} className="mb-20">
               <h3 className="text-xl mb-2 font-bold text-primary">
                 Semester {item.semester}
               </h3>
@@ -51,6 +59,7 @@ const Kurikulum = () => {
                       <tr
                         class="bg-white border-b  hover:bg-gray-50 "
                         key={index}
+                        data-aos="fade-up"
                       >
                         <th
                           scope="row"

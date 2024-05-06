@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import dosenData from "../../../../data/dosen.json";
 import HeaderPage from "../../../../components/HeaderPage";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Dosen = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <HeaderPage title="Dosen" />
@@ -10,7 +17,7 @@ const Dosen = () => {
         <h2 className="xl:text-3xl text-lg font-bold text-center my-10">
           DAFTAR PENGAJAR PRODI AKUNTANSI SEKTOR PUBLIK
         </h2>
-        <div className="overflow-x-auto relative">
+        <div className="relative">
           <table className="w-full xl:text-sm text-[10px] text-left text-gray-500">
             <thead className="text-gray-700 uppercase bg-gray-50">
               <tr className="bg-primary text-white">
@@ -39,7 +46,11 @@ const Dosen = () => {
             </thead>
             <tbody>
               {dosenData.map((dosen, index) => (
-                <tr key={index} className="bg-white border-b">
+                <tr
+                  key={index}
+                  className="bg-white border-b"
+                  data-aos="fade-up"
+                >
                   <th
                     scope="row"
                     className="py-4 px-2 font-medium text-gray-900 whitespace-nowrap"

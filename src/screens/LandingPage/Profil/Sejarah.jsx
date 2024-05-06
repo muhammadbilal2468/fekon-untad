@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { untad2Img } from "../../../assets";
 import HeaderPage from "../../../components/HeaderPage";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Sejarah = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <HeaderPage title="Sejarah" />
       <div className="max-w-screen-xl mx-auto p-4 z-10">
-        <h2 className="xl:text-4xl text-xl font-bold text-center mb-5">
+        <h2
+          className="xl:text-4xl text-xl font-bold text-center mb-5"
+          data-aos="fade-up"
+        >
           SEJARAH
         </h2>
         <div className="flex xl:flex-row flex-col gap-10">
@@ -15,9 +25,13 @@ const Sejarah = () => {
             src={untad2Img}
             alt=""
             className="xl:w-1/2 w-full xl:h-fit h-60"
+            data-aos="fade-right"
           />
           <div className="">
-            <p className="text-gray-500 text-justify mb-2 xl:text-base text-xs">
+            <p
+              className="text-gray-500 text-justify mb-2 xl:text-base text-xs"
+              data-aos="fade-up"
+            >
               Pada 11 Maret tahun 2022, langkah besar dalam transformasi
               pendidikan tinggi vokasi di Universitas Tadulako terwujud melalui
               Keputusan Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi
@@ -30,7 +44,10 @@ const Sejarah = () => {
               Akuntansi Fakultas Ekonomi dan Bisnis Universitas Tadulako (FEB
               UNTAD).{" "}
             </p>
-            <p className="text-gray-500 text-justify mb-2 xl:text-base text-xs">
+            <p
+              className="text-gray-500 text-justify mb-2 xl:text-base text-xs"
+              data-aos="fade-up"
+            >
               Rektor Universitas Tadulako menindaklanjuti keputusan menteri
               tersebut dengan mengeluarkan Keputusan Rektor UNTAD Nomor
               1961/UN28/OT/2022 yang memberikan izin penyelenggaraan PS ASP
@@ -40,7 +57,10 @@ const Sejarah = () => {
             </p>
           </div>
         </div>
-        <p className="text-gray-500 text-justify mb-2 xl:text-base text-xs">
+        <p
+          className="text-gray-500 text-justify mb-2 xl:text-base text-xs"
+          data-aos="fade-up"
+        >
           Perubahan ini bertujuan untuk menyesuaikan diri dengan kebutuhan zaman
           dan meningkatkan relevansi pendidikan tinggi dengan dunia industri,
           khususnya dalam bidang akuntansi sektor publik.Menteri dalam
@@ -58,7 +78,10 @@ const Sejarah = () => {
           dan Teknologi Nomor 99/D/OT/2023 tentang Pencabutan Izin Pembukaan
           Program Studi pada Universitas Tadulako di Kota Palu.
         </p>
-        <p className="text-gray-500 text-justify mb-2 xl:text-base text-xs">
+        <p
+          className="text-gray-500 text-justify mb-2 xl:text-base text-xs"
+          data-aos="fade-up"
+        >
           Seiring dengan keputusan transformasi tersebut, mahasiswa angkatan
           tahun 2020/2021 dan 2021/2022 yang sebelumnya terdaftar di PS
           Akuntansi Da dialihkan ke PS ASP Sarjana Terapan yang telah

@@ -1,15 +1,20 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { bannerVid } from "../../../assets";
 import berita from "../../../data/berita.json";
 import prestasi from "../../../data/prestasi.json";
-import { useNavigate } from "react-router-dom";
 
 // ------------------------- UGM --------------------------
 
 const Beranda = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   const navigate = useNavigate();
 
   const navigateToDetailBerita = (id) => {
@@ -19,10 +24,6 @@ const Beranda = () => {
   const navigateToDetailPrestasi = (id) => {
     navigate(`/detail-prestasi/${id}`);
   };
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   return (
     <>
@@ -40,15 +41,24 @@ const Beranda = () => {
           Your browser does not support the video tag.
         </video>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 xl:-translate-x-1/2 xl:-translate-y-1/2 flex flex-col items-center justify-center z-20 gap-4">
-          <h1 className="text-white xl:text-4xl font-sans font-bold text-center text-2xl">
+          <h1
+            className="text-white xl:text-4xl font-sans font-bold text-center text-2xl"
+            data-aos="fade-left"
+          >
             Akuntansi Sektor Publik
           </h1>
-          <p className="xl:text-lg text-sm text-gray-200 text-center">
+          <p
+            className="xl:text-lg text-sm text-gray-200 text-center"
+            data-aos="fade-right"
+          >
             Menyinari Masa Depan dengan Transparansi dan Integritas, Melangkah
             Maju dengan Keahlian dan Dedikasi di Bidang Akuntansi Sektor Publik
           </p>
           <Link to={"/sejarah"}>
-            <button className="bg-primary text-white py-2 px-6 rounded-xl">
+            <button
+              className="bg-primary text-white py-2 px-6 rounded-xl"
+              data-aos="fade-down"
+            >
               Lihat Profil
             </button>
           </Link>
@@ -65,6 +75,7 @@ const Beranda = () => {
                 src="https://source.unsplash.com/featured/?campus"
                 alt=""
                 className="absolute w-full bg-cover rounded-xl h-full"
+                data-aos="fade-right"
               />
             </div>
             <div className="flex flex-col justify-between xl:gap-2 gap-4 xl:w-5/12 w-full">
@@ -73,6 +84,7 @@ const Beranda = () => {
                   key={index}
                   className="flex gap-2 h-1/3 cursor-pointer"
                   onClick={() => navigateToDetailPrestasi(item.id)}
+                  data-aos="fade-left"
                 >
                   <img
                     src="https://source.unsplash.com/featured/?study"
@@ -112,6 +124,7 @@ const Beranda = () => {
                 key={index}
                 className="flex flex-col gap-2 cursor-pointer"
                 onClick={() => navigateToDetailBerita(item.id)}
+                data-aos="fade-up"
               >
                 <img
                   src="https://source.unsplash.com/featured/?acounting"

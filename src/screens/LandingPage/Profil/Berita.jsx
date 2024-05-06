@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import berita from "../../../data/berita.json";
 import { useNavigate } from "react-router";
 import HeaderPage from "../../../components/HeaderPage";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Berita = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   const navigate = useNavigate();
 
   const navigateToDetailBerita = (id) => {
@@ -19,6 +27,7 @@ const Berita = () => {
               key={index}
               className="flex flex-col gap-2 cursor-pointer"
               onClick={() => navigateToDetailBerita(item.id)}
+              data-aos="fade-up"
             >
               <img
                 src="https://source.unsplash.com/featured/?campus"
